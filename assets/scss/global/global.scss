@@ -10,6 +10,15 @@ a {
   text-decoration: none;
 }
 
+// Стили для всех заголовков кроме header
+.title-h2 {
+  font-family: "Arsenal_Bold", Arial, sans-serif;
+  font-size: 2.18rem;
+  line-height: 2.84rem;
+  letter-spacing: 0.96px;
+  text-transform: uppercase;
+}
+
 // Стили кнопок красной и синей
 
 .button-red {
@@ -21,7 +30,7 @@ a {
   border-radius: 0.45rem;
   color: white;
   background: $red;
-  font-family: "Arsenal_Bold", Arial, sans-serif;
+  font-family: "NunitoSans", Arial, sans-serif;
   line-height: normal;
   letter-spacing: 4px;
   box-shadow: $shadow;
@@ -44,7 +53,7 @@ a {
   border-radius: 0.45rem;
   color: white;
   background: $blue;
-  font-family: "Arsenal_Bold", Arial, sans-serif;
+  font-family: "NunitoSans", Arial, sans-serif;
   line-height: normal;
   letter-spacing: 4px;
   box-shadow: $shadow;
