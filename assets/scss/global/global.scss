@@ -1,0 +1,61 @@
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  font-family: "Arsenal_Regular", Arial, sans-serif;
+  font-size: 22px;
+}
+
+a {
+  text-decoration: none;
+}
+
+// Стили кнопок красной и синей
+
+.button-red {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 15.9rem;
+  padding: 1rem;
+  border-radius: 0.45rem;
+  color: white;
+  background: $red;
+  font-family: "Arsenal_Bold", Arial, sans-serif;
+  line-height: normal;
+  letter-spacing: 4px;
+  box-shadow: $shadow;
+  transition: all 0.3s;
+  cursor: pointer;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.button-red:hover {
+  background: $blue;
+}
+
+.button-blue {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 15.9rem;
+  padding: 1rem;
+  border-radius: 0.45rem;
+  color: white;
+  background: $blue;
+  font-family: "Arsenal_Bold", Arial, sans-serif;
+  line-height: normal;
+  letter-spacing: 4px;
+  box-shadow: $shadow;
+  transition: all 0.3s;
+  cursor: pointer;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.button-blue:hover {
+  background: $red;
+}
+
+//Конец стилей кнопок
