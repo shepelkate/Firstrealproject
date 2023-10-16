@@ -8,6 +8,14 @@
 
 // Начало блока Партнеры Елены
 
+.partners {
+    outline: 1px green;
+    border: 10px solid red;
+    display: grid;
+    grid-template-columns: 10% 45% 45%;
+    grid-template-rows: 1fr 1fr;
+}
+
 // Конец блока Партнеры Елены
 
 // Начало блока Реквизиты и документы Виктории
