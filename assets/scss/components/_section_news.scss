@@ -1,10 +1,17 @@
 .news {  
     border: solid #739EF2 1px;
     border-radius: 15px;
+    max-width: 1376px;
 }
 .news__conteiner {
 }
 .news__block_blue {
+    border-radius: 10px;
+    background: rgba(115, 158, 242, 0.70);
+}
+.news__block_red {
+    border-radius: 10px;
+    background: rgba(242, 115, 119, 0.70);
 }
 .news_header {
 }
@@ -12,15 +19,22 @@
 }
 .news__title_small {
 }
-.news__paragraph {
+.news__paragraph_small {
 }
 .news__date {
 }
-.news__block_red {
-}
 .news__title {
 }
+.news__paragraph {
+}
 .news__button {
+    border-radius: 10px;
+    background: $red;
+    box-shadow: $shadow;
+    color:#000 ;
+}
+.news__button:hover{
+    background: #F27377;
 }
 .news__triangle {
 }
