@@ -1,0 +1,138 @@
+.footer {
+    background-color: $lightblue;
+    margin: 60px 30px 25px;
+
+}
+
+li {
+        list-style: none;
+}
+
+h3 {
+font-family: Nunito Sans;
+font-size: 1.09091rem;
+font-style: normal;
+font-weight: 700;
+line-height: normal
+}
+
+a {
+    color: black;
+font-family: Nunito Sans;
+font-size: 0.90909rem;
+font-style: normal;
+font-weight: 700;
+line-height: 200%; /* 1.81818rem */
+}
+
+.about-f {
+    width: 33%
+}
+
+.contacts {
+    width: 33%
+}
+
+.about-f__logo {
+    width: 300px;
+height: 99px;
+}
+.about-f__text {
+font-family: Arsenal;
+font-size: 1rem;
+font-style: normal;
+font-weight: 700;
+line-height: 130%;
+}
+
+.container-f {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.social__list {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.phone .mail .adress {
+    position: relative;
+}
+
+.phone:before {
+    content: url('../icons/footer_tel_icon.svg');
+    display: inline-block;
+    padding-right: 15px;
+}
+
+.mail:before {
+    content: url('../icons/footer_email_icon.svg');
+    display: inline-block;
+    padding-right: 15px;
+}
+
+
+.address:before {
+    content: url('../icons/footer_maps_icon.svg');
+    display: inline-block;
+    padding-right: 15px;
+}
+
+
+@media all and (max-width: 960px) {
+    .about-f__logo {
+        width: 9.09091rem;
+height: 3rem;
+    }
+}
+
+@media all and (max-width: 480px) {
+    .footer {
+    margin: 0;
+
+}
+    .about-f {
+        width: auto;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .map {
+        display: none;
+    }
+
+    .container-f {
+        display: block;
+    }
+
+    .about-f__logo {
+
+    }
+
+
+    .about-f__text {
+color: var(--unnamed, var(--unnamed, #000));
+text-align: justify;
+font-family: Arsenal;
+font-size: 0.54545rem;
+font-style: normal;
+font-weight: 700;
+line-height: 140%; /* 0.76364rem */
+margin: 3.64rem 1.2rem;
+    }
+
+    a {
+        font-family: Nunito Sans;
+font-size: 0.72727rem;
+font-style: normal;
+font-weight: 700;
+line-height: 140%; /* 1.01818rem */
+    }
+
+    .contacts {
+        width: auto;
+    }
+}
+
