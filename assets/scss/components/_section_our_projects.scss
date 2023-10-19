@@ -1,11 +1,14 @@
-section .our_projects__conteiner {
+section {
+    margin: 0;
+    padding: 0;
+}
+
+.our_projects .our_projects__conteiner {
     box-sizing: border-box;
     width: 1382px;
     top: 0;
     left: 0;
     margin: 35px 29px;
-
-    border: 1px solid red;
 }
 
 .our_projects__conteiner {
@@ -14,8 +17,6 @@ section .our_projects__conteiner {
     align-self: center;
     align-items: center;
     justify-content: center;
-
-    border: 1px solid red;
 }
 
 
@@ -23,16 +24,35 @@ section .our_projects__conteiner {
     margin-bottom: 35px;
     margin-left: 10px;
     margin-right: 10px;
-
-    border: 1px solid blue;
 }
 
-.our_projects__сard2 {
+.our_projects__card2 {
     margin-bottom: 35px;
     margin-left: 10px;
     margin-right: 10px;
+}
 
-    border: 1px solid blue;
+figure {
+    margin-right: 25px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    float: left;
+    border: 3px solid gray;
+}
+
+.our_projects__img_project1 {
+    width: 447px;
+    height: 313px;
+    top: 100px;
+    left: 0;
+}
+
+.our_projects__img_project2 {
+    width: 447px;
+    height: 313px;
+    top: 95px;
+    left: 9px;
 }
 
 .our_projects__title {
@@ -60,28 +80,6 @@ section .our_projects__conteiner {
     width: 880px;
     text-indent: 25px;
     float: left;
-}
-
-figure {
-    margin-right: 25px;
-    margin-top: 10px;
-    display: flex;
-    justify-content: center;
-    float: left;
-}
-
-.our_projects__img_project1 {
-    width: 447px;
-    height: 313px;
-    top: 100px;
-    left: 0;
-}
-
-.our_projects__img_project2 {
-    width: 447px;
-    height: 313px;
-    top: 95px;
-    left: 9px;
 }
 
 .our_projects__button {
