@@ -1,22 +1,23 @@
 header {
     background-color: $light-blue;
-    margin-left: 30px;
-    margin-right: 30px;
-    border-radius: 15px;
+    margin-left: 1.36rem;
+    margin-right: 1.36rem;
+    margin-top: 1.14rem;
+    border-radius: 0.68rem;
     display: flex;
     flex-direction: column;
 
-    .top-container {
+    .header_top-container {
         display: flex;
         flex-direction: row;
         align-items: flex-start;
         justify-content: space-between;
     }
 
-    .logo {
+    .header_logo {
         display: flex;
-        width: 300px;
-        height: 99px;
+        width: 13.63636rem;
+        height: 4.5rem;
         justify-content: center;
         align-items: center;
         flex-shrink: 0;
@@ -24,10 +25,10 @@ header {
         margin-top: 1.36rem;
     }
 
-    .menu {
+    .header_menu {
         display: inline-flex;
         align-items: center;
-        gap: 30px;
+        gap: 1.14rem;
         margin-top: 1.59rem;
         margin-right: 1.82rem;
 
@@ -40,15 +41,34 @@ header {
             line-height: normal;
         }
     }
+    .header_content {
+        display: flex;
+        align-items: center;
+        justify-items: center;
+        flex-direction: row;
+        gap: 2.32rem;
 
-    .about-us {
-        display: inline-flex;
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 1.13636rem;
-        margin-left: 4.82rem;
+        .header_about-us {
+            display: inline-flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 1.13636rem;
+            margin-left: 4.82rem;
+            max-width: 28.8rem;
+        }
+
+        .header_clipart {
+            display: block;
+            width: 22.72727rem;
+            height: 31.31818rem;
+        }
+    
+
+        .header_positional {
+            position: absolute;
+        }
     }
-
+    
     h1 {
         color: var(--unnamed, var(--unnamed, #fff));
         font-family: Arsenal_Bold;
