@@ -7,6 +7,12 @@
     max-width: 86rem;
     margin-left: auto;
     margin-right: auto;
+    @media screen  and (max-width: 960px){
+        display: flex;
+        flex-direction: column-reverse;
+        max-width: 55.375rem;
+        max-height: 86.9375rem;
+    }
 }
 .news__conteiner {
     display: flex;
@@ -23,6 +29,10 @@
     border-radius: 10px;
     background: rgba(115, 158, 242, 0.70);
     padding: 1.25rem 1.25rem 0 1.25rem;
+    @media screen  and (max-width: 1200px){
+        align-self: center;
+        width: 28.25rem;
+    }
 }
 .news__block_red {
     display: flex;
@@ -34,6 +44,10 @@
     background: rgba(242, 115, 119, 0.70);
     margin: 2.3rem 0;
     padding: 1.25rem 1.25rem 0 1.25rem;
+    @media screen  and (max-width: 1200px){
+        align-self: center;
+        width: 28.25rem;
+    }
 }
 .news_header {
     display: flex;
@@ -63,6 +77,9 @@
     width: 95%;
     margin: 0;
     padding: 0 0 0 1vw;
+    @media screen  and (max-width: 1200px){
+        font-size: 1.1rem;
+    }
 }
 .news__date {
     align-self: flex-end;
@@ -76,6 +93,11 @@
 .news__title {
     font-size: 3rem;
     line-height: 130%;
+    @media screen  and (max-width: 960px){
+        align-self: center;
+        font-size: 2.5rem;
+        margin: 1rem 0;
+    }
 }
 .news__paragraph {
     text-align: justify;
@@ -89,6 +111,14 @@
     max-height: 34rem;
     color: #000000B2;
     margin: 0;
+    @media screen  and (max-width: 1200px){
+        font-size: 1.4rem;
+    }
+    @media screen  and (max-width: 960px){
+        align-self: center;
+        font-size: 1.625rem;
+        max-width: 39.375rem;
+    }
 }
 .news__button {
     font-family: "Arsenal_Bold", Arial, sans-serif;
@@ -101,6 +131,12 @@
     color:#fff;
     padding: 0.9375rem 2.25rem;
     margin: 3.5rem 0;
+    @media screen  and (max-width: 1200px){
+        margin: 1.5rem 0;
+    }
+    @media screen  and (max-width: 960px){
+        align-self: center;
+    }
 }
 .news__button:hover{
     background: $pink;
@@ -112,4 +148,13 @@
     left: 47%;
     width: 17.8125rem;
     height: 17.8125rem;
+    z-index: -99;
+    @media screen  and (max-width: 1254px) {
+        bottom: 9%;
+        left: 34%;
+    }
+    @media screen  and (max-width: 960px){
+        bottom: -5%;
+        left: 64%;
+    }
 }
