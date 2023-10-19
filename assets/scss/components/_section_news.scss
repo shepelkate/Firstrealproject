@@ -33,6 +33,10 @@
         align-self: center;
         width: 28.25rem;
     }
+    @media screen  and (max-width: 960px){
+        align-self: flex-start;
+        margin: 0 7vw;
+    }
 }
 .news__block_red {
     display: flex;
@@ -47,6 +51,10 @@
     @media screen  and (max-width: 1200px){
         align-self: center;
         width: 28.25rem;
+    }
+    @media screen  and (max-width: 960px){
+        align-self: flex-end;
+        margin: 2rem 7vw;
     }
 }
 .news_header {
@@ -64,6 +72,9 @@
     font-weight: 700;
     line-height: 130%;
     margin: 0;
+    @media screen  and (max-width: 960px){
+        font-size: 1.625rem;
+    }
 }
 .news__paragraph_small {
     align-self:center;
