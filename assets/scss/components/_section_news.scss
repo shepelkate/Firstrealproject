@@ -11,20 +11,28 @@
 .news__conteiner {
     display: flex;
     flex-direction: column;
-    position: relative;
+    justify-content: flex-start;
     padding: 2.5rem;
 }
 .news__block_blue {
+    display: flex;
+    flex-direction: column;
     width: 38.25rem;
-    height: 10rem;
+    max-height: 10rem;
     border-radius: 10px;
     background: rgba(115, 158, 242, 0.70);
+    padding: 1.25rem 1.25rem 0 1.25rem;
 }
 .news__block_red {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end;
     width: 38.25rem;
-    height: 10rem;
+    max-height: 10rem;
     border-radius: 10px;
     background: rgba(242, 115, 119, 0.70);
+    margin: 2.3rem 0;
+    padding: 1.25rem 1.25rem 0 1.25rem;
 }
 .news_header {
     display: flex;
@@ -33,7 +41,7 @@
 .news__icon {
     width: 2rem;
     height: 2rem;
-    padding: 1vw 0.3vw 1vw 1vw;
+    margin: 0 0.3vw 0 0;
 }
 .news__title_small {
     font-family: "Arsenal_Bold", Arial, sans-serif;
@@ -43,18 +51,26 @@
     margin: 0;
 }
 .news__paragraph_small {
+    align-self:center;
+    text-align: justify;
+    font-family: "Arsenal_Bold", Arial, sans-serif;
+    color: #000000B2;
     font-size: 1.375rem;
     font-weight: 700;
     line-height: 130%;
-    text-indent:2rem;
-    width: 530px;
+    text-indent: 1rem;
+    width: 95%;
     margin: 0;
+    padding: 0 0 0 1vw;
 }
 .news__date {
+    align-self: flex-end;
+    font-family: "Arsenal_Bold", Arial, sans-serif;
+    color: #000000B2;
     font-size: 1.125rem;
     font-weight: 700;
     line-height: 130%;
-    margin: 0;
+    margin: 0 0 0.5vw 0;
 }
 .news__title {
     font-size: 3rem;
@@ -63,15 +79,17 @@
     letter-spacing: 0.96px; 
 }
 .news__paragraph {
+    text-align: justify;
     font-family: "Arsenal_Bold", Arial, sans-serif;
     font-size: 1.75rem;
     font-weight: 700;
     line-height: 130%;
-    letter-spacing: 1.12px;
-    text-indent:2rem;
+    letter-spacing: 0.07rem;
+    text-indent: 1rem;
     max-width: 29.6875rem;
     max-height: 34rem;
     color: #000000B2;
+    margin: 0;
 }
 .news__button {
     font-family: "Arsenal_Bold", Arial, sans-serif;
@@ -83,13 +101,16 @@
     line-height: 130%;
     color:#fff;
     padding: 0.9375rem 2.25rem;
+    margin: 3.5vw 0;
 }
 .news__button:hover{
     background: $pink;
     color:#000;
 }
 .news__triangle {
-    position: absolute;
+    position: relative;
+    bottom: 17vw;
+    left: 13vw;
     width: 17.8125rem;
     height: 17.8125rem;
 }
