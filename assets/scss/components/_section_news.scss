@@ -12,6 +12,7 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    position: relative;
     padding: 2.5rem;
 }
 .news__block_blue {
@@ -74,9 +75,7 @@
 }
 .news__title {
     font-size: 3rem;
-    font-weight: 700;
     line-height: 130%;
-    letter-spacing: 0.96px; 
 }
 .news__paragraph {
     text-align: justify;
@@ -85,7 +84,7 @@
     font-weight: 700;
     line-height: 130%;
     letter-spacing: 0.07rem;
-    text-indent: 1rem;
+    text-indent: 1.8rem;
     max-width: 29.6875rem;
     max-height: 34rem;
     color: #000000B2;
@@ -101,16 +100,16 @@
     line-height: 130%;
     color:#fff;
     padding: 0.9375rem 2.25rem;
-    margin: 3.5vw 0;
+    margin: 3.5rem 0;
 }
 .news__button:hover{
     background: $pink;
     color:#000;
 }
 .news__triangle {
-    position: relative;
-    bottom: 17vw;
-    left: 13vw;
+    position: absolute;
+    bottom: 4%;
+    left: 47%;
     width: 17.8125rem;
     height: 17.8125rem;
 }
