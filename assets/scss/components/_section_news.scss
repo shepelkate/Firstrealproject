@@ -1,0 +1,251 @@
+.news {  
+    display: grid;
+    grid-template-columns: 58% 42%;
+    border: solid #739EF2 1px;
+    border-radius: 15px;
+    max-height: 62.54545rem;
+    max-width: 86rem;
+    margin-left: auto;
+    margin-right: auto;
+    @media screen  and (max-width: 960px){
+        display: flex;
+        flex-direction: column-reverse;
+        max-width: 40.27273rem;
+        max-height: 86.9375rem;
+    }
+}
+.news__conteiner {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    position: relative;
+    padding: 1.9rem;
+    @media screen  and (max-width: 480px){
+        padding: 0.9rem 0.9rem 0.5rem 0.9rem;
+    }
+}
+.news__block_blue {
+    display: flex;
+    flex-direction: column;
+    width: 27.81818rem;
+    max-height: 7.27273rem;
+    border-radius: 10px;
+    background: rgba(115, 158, 242, 0.70);
+    padding: 1rem 1rem 0 1rem;
+    @media screen  and (max-width: 1250px){
+        align-self: center;
+        width: 24.5rem;
+    }
+    @media screen  and (max-width: 960px){
+        align-self: flex-start;
+        margin: 0 7vw;
+    }
+    @media screen  and (max-width: 760px){
+        align-self: center;
+        max-width: 20rem;
+        max-height: 8rem;
+        margin: 4vw 0 0 0;
+    }
+    @media screen  and (max-width: 480px){
+        align-self: center;
+        max-width: 18.18182rem;
+        max-height: 8.22727rem;
+    }
+    @media screen  and (max-width: 442px){
+        max-width: 17rem;
+    }
+    @media screen  and (max-width: 442px){
+        max-width: 11rem;
+        max-height: 10rem;
+    }
+}
+.news__block_red {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end;
+    width: 27.81818rem;
+    max-height: 7.27273rem;
+    border-radius: 10px;
+    background: rgba(242, 115, 119, 0.70);
+    margin: 2rem 0;
+    padding: 1rem 1rem 0 1rem;
+    @media screen  and (max-width: 1250px){
+        align-self: center;
+        width: 24.5rem;
+    }
+    @media screen  and (max-width: 960px){
+        align-self: flex-end;
+        margin: 1.5rem 7vw;
+    }
+    @media screen  and (max-width: 760px){
+        align-self: center;
+        max-width: 20rem;
+        max-height: 8rem;
+        margin: 4vw 0 0 0;
+    }
+    @media screen  and (max-width: 480px){
+        align-self: center;
+        max-width: 18.18182rem;
+        max-height: 8.22727rem;
+    }
+    @media screen  and (max-width: 442px){
+        max-width: 17rem;
+    }
+    @media screen  and (max-width: 442px){
+        max-width: 11rem;
+        max-height: 10rem;
+    }
+}
+.news_header {
+    display: flex;
+    flex-direction: row;
+}
+.news__icon {
+    width: 1.45455rem;
+    height: 1.45455rem;
+    margin: 0 0.3vw 0 0;
+}
+.news__title_small {
+    font-family: "Arsenal_Bold", Arial, sans-serif;
+    font-size: 1.27273rem;
+    font-weight: 700;
+    line-height: 130%;
+    margin: 0;
+    @media screen  and (max-width: 960px){
+        font-size: 1.18182rem;
+    }
+    @media screen  and (max-width: 480px){
+        font-size: 1rem;
+    }
+}
+.news__paragraph_small {
+    align-self:center;
+    text-align: justify;
+    font-family: "Arsenal_Bold", Arial, sans-serif;
+    color: #000000B2;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 130%;
+    text-indent: 1rem;
+    width: 95%;
+    margin: 0;
+    padding: 0 0 0 1vw;
+    @media screen  and (max-width: 1200px){
+        font-size: 1rem;
+    }
+    @media screen  and (max-width: 480px){
+        font-size: 0.81818rem;
+    }
+}
+.news__date {
+    align-self: flex-end;
+    font-family: "Arsenal_Bold", Arial, sans-serif;
+    color: #000000B2;
+    font-size: 0.81818rem;
+    font-weight: 700;
+    line-height: 130%;
+    margin: 0 0 0.5vw 0;
+    @media screen  and (max-width: 480px){
+        font-size: 0.72727rem;
+    }
+}
+.news__title {
+    font-size: 2.18182rem;
+    line-height: 130%;
+    @media screen  and (max-width: 960px){
+        align-self: center;
+        font-size: 1.81818rem;
+        margin: 0.8rem 0;
+    }
+    @media screen  and (max-width: 480px){
+        font-size: 1.7rem;
+    }
+    @media screen  and (max-width: 430px){
+        font-size: 1rem;
+        margin: 0;
+    }
+}
+.news__paragraph {
+    text-align: justify;
+    font-family: "Arsenal_Bold", Arial, sans-serif;
+    font-size: 1.27273rem;
+    font-weight: 700;
+    line-height: 130%;
+    letter-spacing: 0.07rem;
+    text-indent: 1.8rem;
+    max-width: 21.59091rem;
+    max-height: 24.7rem;
+    color: #000000B2;
+    margin: 0;
+    @media screen  and (max-width: 1200px){
+        font-size: 1.2rem;
+    }
+    @media screen  and (max-width: 960px){
+        align-self: center;
+        font-size: 1.18182rem;
+        max-width: 28.63636rem;
+    }
+    @media screen  and (max-width: 635px){
+        font-size: 1.1rem;
+    }
+    @media screen  and (max-width: 480px){
+        max-width: 17.54545rem;
+        font-size: 1rem;
+    }
+    // @media screen  and (max-width: 350px){
+    //     font-size: 1rem;
+    // }
+}
+.news__button {
+    font-family: "Arsenal_Bold", Arial, sans-serif;
+    border-radius: 10px;
+    background: $red;
+    box-shadow: $shadow;
+    max-width: 8.7rem;
+    font-weight: 700;
+    line-height: 130%;
+    color:#fff;
+    padding: 0.68182rem 1.63636rem;
+    margin: 3.5rem 0;
+    @media screen  and (max-width: 1200px){
+        margin: 1.5rem 0;
+    }
+    @media screen  and (max-width: 960px){
+        align-self: center;
+    }
+}
+.news__button:hover{
+    background: $pink;
+    color:#000;
+}
+.news__triangle {
+    position: absolute;
+    bottom: 2.5%;
+    left: 36%;
+    width: 17.8125rem;
+    height: 17.8125rem;
+    z-index: -99;
+    @media screen  and (max-width: 1257px) {
+        bottom: 1%;
+        left: 18%;
+    }
+    @media screen  and (max-width: 960px){
+        bottom: -9%;
+        left: 54%;
+    }
+    @media screen  and (max-width: 745px){
+        width: 12.625rem;
+        height: 12.625rem;
+        bottom: 0%;
+        left: 48%;
+    }
+    @media screen  and (max-width: 480px){
+        width: 7.72727rem;
+        height: 7.72727rem;
+        bottom: 6%;
+        left: 66%;
+    }
+    @media screen  and (max-width: 430px){
+        display: none;
+    }
+}
