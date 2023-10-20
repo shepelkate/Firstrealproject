@@ -3,7 +3,7 @@
 *::after {
   box-sizing: inherit;
   font-family: "Arsenal_Regular", Arial, sans-serif;
-  font-size: 22px;
+  // font-size: 22px;
 }
 
 a {
@@ -17,6 +17,7 @@ a {
   line-height: 2.84rem;
   letter-spacing: 0.96px;
   text-transform: uppercase;
+  margin: 0;
 }
 
 // Стили кнопок красной и синей
@@ -25,6 +26,7 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
+  min-width: 15.9rem;
   max-width: 15.9rem;
   padding: 1rem;
   border-radius: 0.45rem;
@@ -41,13 +43,15 @@ a {
 }
 
 .button-red:hover {
-  background: $blue;
+  background: $pink;
+  color: black;
 }
 
 .button-blue {
   display: flex;
   align-items: center;
   justify-content: center;
+  min-width: 15.9rem;
   max-width: 15.9rem;
   padding: 1rem;
   border-radius: 0.45rem;
@@ -64,7 +68,8 @@ a {
 }
 
 .button-blue:hover {
-  background: $red;
+  background: $light-blue;
+  color: black;
 }
 
 //Конец стилей кнопок

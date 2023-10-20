@@ -109,19 +109,19 @@ height: 3rem;
     }
 
     .about-f__logo {
-
+        diaplay: block
     }
 
 
     .about-f__text {
-color: var(--unnamed, var(--unnamed, #000));
-text-align: justify;
-font-family: Arsenal;
-font-size: 0.54545rem;
-font-style: normal;
-font-weight: 700;
-line-height: 140%; /* 0.76364rem */
-margin: 3.64rem 1.2rem;
+    color: #000;
+    text-align: justify;
+    font-family: Arsenal;
+    font-size: 0.54545rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%; /* 0.76364rem */
+    margin: 3.64rem 1.2rem;
     }
 
     a {
