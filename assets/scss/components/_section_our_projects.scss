@@ -1,87 +1,80 @@
-section {
-    margin: 0;
-    padding: 0;
-}
-
 .our_projects .our_projects__conteiner {
-    box-sizing: border-box;
-    width: 1382px;
-    top: 0;
-    left: 0;
-    margin: 35px 29px;
+  box-sizing: border-box;
+  width: 1382px;
+  top: 0;
+  left: 0;
+  margin: 35px 29px;
 }
 
 .our_projects__conteiner {
-    display: flex;
-    flex-direction: column;
-    align-self: center;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  align-items: center;
+  justify-content: center;
 }
 
-
 .our_projects__сard1 {
-    margin-bottom: 35px;
-    margin-left: 10px;
-    margin-right: 10px;
+  margin-bottom: 35px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .our_projects__card2 {
-    margin-bottom: 35px;
-    margin-left: 10px;
-    margin-right: 10px;
+  margin-bottom: 35px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 figure {
-    margin-right: 25px;
-    margin-top: 10px;
-    display: flex;
-    justify-content: center;
-    float: left;
-
+  margin-right: 25px;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  float: left;
 }
 
 .our_projects__img_project1 {
-    width: 447px;
-    height: 313px;
-    top: 100px;
-    left: 0;
+  width: 447px;
+  height: 313px;
+  top: 100px;
+  left: 0;
 }
 
 .our_projects__img_project2 {
-    width: 447px;
-    height: 313px;
-    top: 95px;
-    left: 9px;
+  width: 447px;
+  height: 313px;
+  top: 95px;
+  left: 9px;
 }
 
 .our_projects__title {
-    font-family: "Arsenal", sans-serif;
-    font-size: 28px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 130%;
-    letter-spacing: 2%;
-    color: #000;
-    float: left;
-    text-align: left;
-    padding-bottom: 20px;
+  font-family: "Arsenal", sans-serif;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 130%;
+  letter-spacing: 2%;
+  color: #000;
+  float: left;
+  text-align: left;
+  padding-bottom: 20px;
 }
 
 .our_projects__paragraph {
-    font-family: "Arsenal", sans-serif;
-    font-size: 22px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 130%;
-    text-align: justify;
-    color: #000;
-    opacity: 0.8;
-    width: 880px;
-    text-indent: 25px;
-    float: left;
+  font-family: "Arsenal", sans-serif;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 130%;
+  text-align: justify;
+  color: #000;
+  opacity: 0.8;
+  width: 880px;
+  text-indent: 25px;
+  float: left;
 }
 
 .our_projects__button {
-    margin-bottom: 8px;
+  margin-bottom: 8px;
 }
