@@ -6,19 +6,23 @@
   max-width: 56rem;
   display: grid;
   grid-template-columns: 60% 40%;
+
   @media (max-width: 960px) {
-    margin: 3% auto;
-    max-width: 45.75rem;
+    max-width: 46rem;
+    margin: 2rem 1rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
   }
+  
   @media (max-width: 480px) {
+    max-width: 27rem;
+    margin: 2rem 1rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
+    align-items: center;    
   }
 }
 
