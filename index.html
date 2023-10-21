@@ -20,7 +20,7 @@
             <!-- конец=) -->
             <!-- Начало блока Наши проекты Ники -->
             <section class="our_projects">
-                <h2 class="our_projects__title_big title-h2">Наши проекты</h2>
+                <h2 class="our_projects__title_big title-h2" id="projects">Наши проекты</h2>
                 <div class="our_projects__conteiner">
                     <div class="our_projects__сard1">
                         <ul class="our_projects__image-gallery">
@@ -143,7 +143,7 @@
                     </div>
                 </div>
                 <div class="news__conteiner">
-                    <h2 class="news__title title-h2">Новости</h2>
+                    <h2 class="news__title title-h2" id="news">Новости</h2>
                     <p class="news__paragraph">Завтра - день информирования об аутизме.
                         Он имеет для нас,
                         родителей и близких детей и взрослых с аутизмом,
@@ -163,7 +163,7 @@
             <!-- Начало блока Партнеры Елены -->
             <section class="partners">
                 <div class="partners__main">
-                    <h2 class="title-h2">Партнеры организации</h2>
+                    <h2 class="title-h2" id="partners">Партнеры организации</h2>
                     <div class="partners__container">
                         <div class="partners__item1_logo"><img src="assets/icons/partners__logo_region.png"
                                 alt="logo-regions" /></div>
@@ -203,7 +203,7 @@
                     src="./assets/icons/block_requisites_triangle.svg" alt="triangle" class="triangle-bottom" />
                 <div class="requisites__wrapper">
                     <div class="requisites__title">
-                        <h2 class="title-h2">реквизиты</h2><a href="https://cloudpayments.ru/"
+                        <h2 class="title-h2" id="requisites">реквизиты</h2><a href="https://cloudpayments.ru/"
                             class="button-blue">поддержать нас</a>
                     </div>
                     <div class="requisites__info">
@@ -232,8 +232,149 @@
             <!-- Конец блока Реквизиты и документы Виктории -->
         </main>
         <!-- Начало блока footer Полины -->
-        <footer></footer>
+        <footer class="footer">
+			<div class="hamburger__container">
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <section class="menu">
+                    <h3 class="map__header">Карта сайта</h3>
+                    <ul class="map__list">
+                        <li class="map__item">
+                            <a href="" class="map__link">О нас</a>
+                        </li>
+                        <li class="map__item">
+                            <a href="#projects" class="map__link">Проекты</a>
+                        </li>
+                        <li class="map__item">
+                            <a href="#news" class="map__link">Новости</a>
+                        </li>
+                        <li class="map__item">
+                            <a href="#partners" class="map__link">Партнеры</a>
+                        </li>
+                        <li class="map__item">
+                            <a href="" class="map__link">Документы</a>
+                        </li>
+                        <li class="map__item">
+                            <a href="#requisites" class="map__link">Реквизиты</a>
+                        </li>
+                        <li class="map__item">
+                            <a href="" class="map__link">Контакты</a>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+            <div class="container-f">
+                <section class="about-f">
+                    <img
+                        src="assets/icons/логотип.svg"
+                        alt=""
+                        class="about-f__logo"
+                    />
+                    <p class="about-f__text">
+                        Автономная некоммерческая организация «Центр содействия
+                        инклюзивному образованию детей с ограниченными
+                        возможностями здоровья «Растим в добре»
+                    </p>
+                </section>
+
+                <section class="map">
+                    <h3 class="map__header">Карта сайта</h3>
+                    <ul class="map__list">
+                        <li class="map__item">
+                            <a href="" class="map__link">О нас</a>
+                        </li>
+                        <li class="map__item">
+                            <a href="#projects" class="map__link">Проекты</a>
+                        </li>
+                        <li class="map__item">
+                            <a href="#news" class="map__link">Новости</a>
+                        </li>
+                        <li class="map__item">
+                            <a href="#partners" class="map__link">Партнеры</a>
+                        </li>
+                        <li class="map__item">
+                            <a href="" class="map__link">Документы</a>
+                        </li>
+                        <li class="map__item">
+                            <a href="#requisites" class="map__link">Реквизиты</a>
+                        </li>
+                        <li class="map__item">
+                            <a href="" class="map__link">Контакты</a>
+                        </li>
+                    </ul>
+                </section>
+                <section class="contacts">
+                    <h3 class="contacts__header">Контакты</h3>
+                    <ul class="contacts__list">
+                        <li class="contacts__item">
+                            <a
+                                class="contacts__link phone"
+                                href="tel:+79119203381"
+                                >8 (911) 920-33-81</a
+                            >
+                        </li>
+                        <li class="contacts__item">
+                            <a
+                                class="contacts__link mail"
+                                href="mailto:rastimvdobre@mail.ru"
+                                >rastimvdobre@mail.ru</a
+                            >
+                        </li>
+
+                        <li class="contacts__item">
+                            <a href="" class="contacts__link address"
+                                >196602, г. Санкт-Петербург, г. Пушкин, ул.
+                                Архитектора Данини, д. 5, лит А, пом. 10-Н</a
+                            >
+                        </li>
+                    </ul>
+                </section>
+            </div>
+            <a
+                href="https://cloudpayments.ru/"
+                class="about-f__button button-red"
+                >поддержать нас</a
+            >
+            <section class="social">
+                <ul class="social__list">
+                    <li class="social__item">
+                        <a href="" class="social__link"
+                            ><img
+                                src="/assets/icons/footer_vk_icon.svg"
+                                alt="VK"
+                        /></a>
+                    </li>
+                    <li class="social__item">
+                        <a href="" class="social__link"
+                            ><img
+                                src="/assets/icons/footer_wa_icon.svg"
+                                alt="WhatsApp"
+                        /></a>
+                    </li>
+                    <li class="social__item">
+                        <a href="" class="social__link"
+                            ><img
+                                src="/assets/icons/footer_tg_icon.svg"
+                                alt="Telegram"
+                        /></a>
+                    </li>
+                </ul>
+            </section>
+            <section class="copyright">
+                <span class="copyright__text"
+                    >2023 АНО "РАСТИМ В ДОБРЕ". Все права защищены.</span
+                >
+                <span class="copyright__authors">
+                    Создано командой учениц школы
+                    <a href="#" class="copyrigth__link">itgirlschool.com</a>
+                </span>
+            </section>
+        </footer>
         <!-- Конец блока footer Полины -->
+		<script src="assets/scripts/hamburger.js"></script>
     </body>
 
 </html>
