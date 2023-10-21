@@ -22,99 +22,6 @@
     border: 5px solid rgb(9, 255, 0);
 }
 
-.our_projects__сard1 {
-    display: flex;
-    flex-direction: column;
-    max-width: 86rem;
-    max-height: 35rem;
-    left: 0;
-    top: 97px;
-
-    border: 2px solid rgb(208, 19, 88);
-
-
-    @media screen and (max-width: 760px) {
-        flex: 50%;
-        align-self: center;
-        max-width: 30rem;
-        max-height: 40rem;
-        margin: 4vw 0 0 0;
-    }
-
-    @media screen and (max-width: 480px) {
-
-        align-self: center;
-        max-width: 20rem;
-        max-height: 50rem;
-        float: none;
-        width: 100%;
-
-    }
-
-
-}
-
-.our_projects__card2 {
-    display: flex;
-    flex-direction: column;
-    max-width: 86rem;
-    max-height: 29rem;
-    left: 0;
-    top: 830px;
-
-
-    @media screen and (max-width: 560px) {
-        display: flex;
-        flex-wrap: wrap;
-        align-self: center;
-        max-width: 30rem;
-        max-height: 50rem;
-        margin: 1vw 0 0 0;
-
-    }
-
-    @media screen and (max-width: 480px) {
-        display: flex;
-        flex-wrap: wrap;
-        padding: 0.9rem 0.9rem 0.5rem 0.9rem;
-
-    }
-
-    border: 2px solid rgb(197, 13, 77);
-}
-
-/* Responsive image gallery */
-ul {
-    list-style: none;
-}
-
-.our_projects__image-gallery {
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: center;
-    gap: 15px;
-    margin: auto;
-}
-
-.our_projects__image-gallery>li {
-    flex-basis: 28rem;
-    /*width: 450px;*/
-    position: relative;
-    cursor: pointer;
-}
-
-.our_projects__image-gallery::after {
-    content: "";
-    flex-basis: 28rem;
-}
-
-.our_projects__image-gallery li img {
-    object-fit: cover;
-    max-width: 100%;
-    height: auto;
-    vertical-align: middle;
-}
-
 .our_projects__title_big {
     font-size: 2.2rem;
     line-height: 130%;
@@ -137,7 +44,99 @@ ul {
         font-size: 1rem;
         margin: 0;
     }
+}
 
+.our_projects__сard1 {
+    display: flex;
+    flex-direction: column;
+    max-width: 86rem;
+    max-height: 35rem;
+    left: 0;
+    top: 97px;
+    border: 2px solid rgb(19, 186, 208);
+
+    @media screen and (max-width: 760px) {
+        flex: 50%;
+        align-self: center;
+        max-width: 30rem;
+        max-height: 40rem;
+        margin: 4vw 0 0 0;
+    }
+
+    @media screen and (max-width: 480px) {
+        flex: 30%;
+        align-self: center;
+        max-width: 20rem;
+        max-height: 50rem;
+    }
+}
+
+.our_projects__card2 {
+    display: flex;
+    flex-direction: column;
+    max-width: 86rem;
+    max-height: 30rem;
+    left: 0;
+    top: 830px;
+
+    @media screen and (max-width: 760px) {
+        flex: 50%;
+        align-self: center;
+        max-width: 30rem;
+        max-height: 40rem;
+        margin: 4vw 0 0 0;
+    }
+
+    @media screen and (max-width: 480px) {
+        flex: 30%;
+        align-self: center;
+        max-width: 20rem;
+        max-height: 50rem;
+        padding: 0.9rem 0.9rem 0.5rem 0.9rem;
+    }
+
+    border: 2px solid rgb(197, 13, 77);
+}
+
+/* Responsive image gallery */
+
+.our_projects__image-gallery {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+.our_projects__img_project {
+    flex: 33.3%;
+    max-width: 33.3%;
+    padding: 0 4px;
+}
+
+.our_projects__img_project img {
+    margin-top: 8px;
+    vertical-align: middle;
+}
+
+@media screen and (min-width: 760px) and (max-width: 960px) {
+    .our_projects__img_project {
+        justify-content: center;
+        flex: 90%;
+        max-width: 90%;
+    }
+}
+
+@media screen and (min-width: 480px) and (max-width: 760px) {
+    .our_projects__img_project {
+        justify-content: center;
+        flex: 100%;
+        max-width: 100%;
+    }
+}
+
+our_projects__text {
+    display: flex;
+    justify-content: center;
+    padding: 0;
 }
 
 .our_projects__title {
@@ -145,10 +144,9 @@ ul {
     font-size: 1.4rem;
     font-weight: 700;
     line-height: 130%;
-    max-width: 45rem;
     text-align: center;
     align-self: center;
-    white-space: nowrap;
+    white-space: wrap;
 
     border: 2px solid rgb(74, 0, 245);
 
@@ -216,12 +214,8 @@ ul {
         margin: 1.5rem 0;
     }
 
-    @media screen and (max-width: 960px) {
-        align-self: center;
-    }
+    @media screen and (max-width: 960px) {}
 
-    @media screen and (max-width: 560px) {
-        align-self: center;
-    }
+    @media screen and (max-width: 560px) {}
 
 }
