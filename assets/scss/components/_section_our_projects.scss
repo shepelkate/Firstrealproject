@@ -1,87 +1,174 @@
-section {
-    margin: 0;
-    padding: 0;
-}
+.our_projects {
+    max-width: 86rem;
+    max-height: 80rem;
+    margin: 2.2rem auto;
 
-.our_projects .our_projects__conteiner {
-    box-sizing: border-box;
-    width: 1382px;
-    top: 0;
-    left: 0;
-    margin: 35px 29px;
+    border: 2px solid blue;
 }
 
 .our_projects__conteiner {
-    display: flex;
-    flex-direction: column;
-    align-self: center;
-    align-items: center;
-    justify-content: center;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    max-width: 86rem;
+    max-height: 80rem;
+
+    @media screen and (max-width: 960px) {
+        displa: flex;
+        flex-directio: column-reverse;
+        max-width: 40rem;
+        max-height: 80rem;
+    }
+
+    border: 2px solid rgb(9, 255, 0);
 }
+
 
 
 .our_projects__сard1 {
-    margin-bottom: 35px;
-    margin-left: 10px;
-    margin-right: 10px;
+    display: flex;
+    flex-direction: column;
+    max-width: 86rem;
+    max-height: 35rem;
+    left: 0;
+    top: 97px;
+
+    @media screen and (max-width: 480px) {
+        padding: 0.9rem 0.9rem 0.5rem 0.9rem;
+    }
+
+    border: 2px solid rgb(208, 19, 88);
 }
 
 .our_projects__card2 {
-    margin-bottom: 35px;
-    margin-left: 10px;
-    margin-right: 10px;
-}
-
-figure {
-    margin-right: 25px;
-    margin-top: 10px;
     display: flex;
-    justify-content: center;
-    float: left;
-
-}
-
-.our_projects__img_project1 {
-    width: 447px;
-    height: 313px;
-    top: 100px;
+    flex-direction: column;
+    max-width: 86rem;
+    max-height: 29rem;
     left: 0;
+    top: 830px;
+
+    @media screen and (max-width: 480px) {
+        padding: 0.9rem 0.9rem 0.5rem 0.9rem;
+    }
+
+    border: 2px solid rgb(197, 13, 77);
 }
 
-.our_projects__img_project2 {
-    width: 447px;
-    height: 313px;
-    top: 95px;
-    left: 9px;
+/* Responsive image gallery rules begin*/
+ul {
+    list-style: none;
+
+}
+
+.our_projects__image-gallery {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 15px;
+    margin: auto;
+}
+
+.our_projects__image-gallery>li {
+    flex-basis: 28rem;
+    /*width: 450px;*/
+    position: relative;
+    cursor: pointer;
+}
+
+.our_projects__image-gallery::after {
+    content: "";
+    flex-basis: 28rem;
+}
+
+.our_projects__image-gallery li img {
+    object-fit: cover;
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+
+
+.our_projects__title_big {
+    font-size: 2.2rem;
+    line-height: 130%;
+    text-align: center;
+    white-space: nowrap;
+
+    @media screen and (max-width: 960px) {
+        align-self: center;
+        font-size: 1.8rem;
+        margin: 0.8rem 0;
+    }
+
+    @media screen and (max-width: 480px) {
+        font-size: 1.7rem;
+    }
+
+    @media screen and (max-width: 430px) {
+        font-size: 1rem;
+        margin: 0;
+    }
 }
 
 .our_projects__title {
-    font-family: "Arsenal", sans-serif;
-    font-size: 28px;
-    font-style: normal;
+    font-family: "Arsenal_Bold", Arial, sans-serif;
+    font-size: 1.4rem;
     font-weight: 700;
     line-height: 130%;
-    letter-spacing: 2%;
-    color: #000;
-    float: left;
-    text-align: left;
-    padding-bottom: 20px;
+    max-width: 45rem;
+    text-align: center;
+    align-self: center;
+    white-space: nowrap;
+
+    @media screen and (max-width: 960px) {
+        font-size: 1.2rem;
+    }
+
+    @media screen and (max-width: 480px) {
+        font-size: 1rem;
+    }
+
+    border: 2px solid rgb(255, 30, 0);
 }
 
 .our_projects__paragraph {
-    font-family: "Arsenal", sans-serif;
-    font-size: 22px;
-    font-style: normal;
+    align-self: center;
+    text-align: justify;
+    font-family: "Arsenal_Bold", Arial, sans-serif;
+    font-size: 1.2rem;
     font-weight: 700;
     line-height: 130%;
-    text-align: justify;
-    color: #000;
+    text-indent: 1.6rem;
+    width: 95%;
     opacity: 0.8;
-    width: 880px;
-    text-indent: 25px;
-    float: left;
+    margin: 0;
+    padding: 0 0 0 1vw;
+
+
+    @media screen and (max-width: 1200px) {
+        font-size: 1rem;
+    }
+
+    @media screen and (max-width: 960px) {
+        max-width: 28.6rem;
+        align-self: center;
+        font-size: 1rem;
+    }
+
+    @media screen and (max-width: 635px) {
+        font-size: 1rem;
+    }
+
+    @media screen and (max-width: 480px) {
+        max-width: 17.5rem;
+        font-size: 0.8rem;
+    }
+
+    border: 2px solid rgb(0, 255, 208);
 }
 
+
 .our_projects__button {
-    margin-bottom: 8px;
+    margin: auto;
+    align-self: center;
 }
