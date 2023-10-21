@@ -1,11 +1,20 @@
 // Начало блока Партнеры Елены
 
 .partners {
-  margin: 5% auto;
-  width: 90%;
+  outline: 1px solid blue;
+  margin: 3% auto;
+  max-width: 56rem;
   display: grid;
   grid-template-columns: 60% 40%;
   @media (max-width: 960px) {
+    margin: 3% auto;
+    max-width: 45.75rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  @media (max-width: 480px) {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -19,16 +28,18 @@
     display: grid;
     justify-items: center;
   }
-  .title-h2 {
+  .partners__title {
     max-width: 100%;
     max-height: 100%;
+    text-align: start;
+    padding-left: 4%;
     @media (max-width: 960px) {
       font-size: 1.81rem;
+      margin-bottom: 3%;
     }
     @media (max-width: 480px) {
-      .title-h2 {
-        font-size: 1.72rem;
-      }
+      text-align: center;
+      font-size: 1.75rem;
     }
   }
 }
@@ -37,19 +48,35 @@
   min-width: 100%;
   min-height: 80%;
   display: grid;
-  justify-items: start;
+  justify-items: center;
   align-items: center;
   grid-template-columns: 35% 65%;
   grid-template-rows: 1fr 1fr;
-  ul {
+  column-gap: 5%;
+  li {
     list-style: inside url(/assets/icons/check_mark.svg);
     font-family: "Arsenal_Bold";
-    color: var(--70, rgba(0, 0, 0, 0.7));
-    font-size: 1.28rem;
+    color: rgba(0, 0, 0, 0.7);
+    font-size: 1.27273rem;
     line-height: 130%;
-    letter-spacing: 1.12px;
+    letter-spacing: 0.07rem;
     @media (max-width: 960px) {
       font-size: 1.18rem;
+      padding: 1%;
+    }
+    @media (max-width: 480px) {
+      padding: 0%;
+    }
+  }
+
+  span {
+    font-family: "Arsenal_Bold";
+    color: rgba(0, 0, 0, 0.7);
+    font-size: 1.27273rem;
+    letter-spacing: 0.07rem;
+    @media (max-width: 960px) {
+      font-size: 1.18rem;
+      padding: 1%;
     }
   }
 }
@@ -57,6 +84,17 @@
 .partners__item1_list,
 .partners__item2_list {
   min-width: 100%;
+}
+
+.partners__item1_title {
+  span {
+  padding-bottom: 1%;
+}
+}
+
+.partners__item1_list {
+  display: grid;
+  padding: 0%;
 }
 
 .partners__aside {
@@ -89,6 +127,7 @@
 
   .partners__item1_list {
     grid-row: 2 / 3;
+    justify-items: center;
     span {
       padding-left: 5%;
     }
@@ -96,8 +135,7 @@
 
   .partners__item2_list {
     grid-row: 4 / 5;
-    span {
-      padding-left: 35%;
-    }
+    display: grid;
+    justify-items: center;
   }
 }
