@@ -34,7 +34,7 @@ header {
     border-radius: 0.68rem;
     display: flex;
     flex-direction: column;
-    min-width: 960px;
+    // min-width: 960px;
     .test {
         display: none;
         position: absolute;
@@ -110,9 +110,15 @@ header {
         .header_menu {
             display: inline-flex;
             align-items: center;
-            gap: 1.14rem;
+            $max-gap: 1.14;
+            $min-gap: 0.57;
+            gap: adaptive-shrink(1440, 960, $max-gap, $min-gap);
             margin-top: 1.59rem;
-            margin-right: 1.82rem;
+            
+            $max-margin-right: 1.82;
+            $min-margin-right: 0.94;
+            margin-right: adaptive-shrink(1440, 960, $max-margin-right, $min-margin-right);
+
 
             a {
                 color: var(--unnamed, var(--unnamed, #000));
@@ -125,12 +131,16 @@ header {
             }
 
             @media screen and (min-width: 1440px) {
+                gap: $max-gap * 1rem;
+                margin-right: $max-margin-right * 1rem;
                 a {
                     font-size: 20px;
                 }
             }
 
             @media screen and (max-width: 960px) {
+                margin-right: $min-margin-right * 1rem;
+                gap: $min-gap * 1rem;
                 a {
                     font-size: 18px;
                 }
@@ -143,7 +153,10 @@ header {
         align-items: flex-start;
         justify-items: center;
         flex-direction: row;
-        gap: 2.32rem;
+
+        $max-gap: 2.32;
+        $min-gap: -0.3;
+        gap: adaptive-shrink(1440, 960, $max-gap, $min-gap);
         // margin: auto;
 
         $margin-left-max: 4.82;
@@ -157,10 +170,12 @@ header {
         @media screen and (min-width: 1440px) {
             margin-left: $margin-left-max * 1rem;
             margin-right: $margin-right-max * 1rem;
+            gap: $max-gap * 1rem;
         }
         @media screen and (max-width: 960px) {
             margin-left: $margin-left-min * 1rem;
             margin-right: $margin-right-min * 1rem;
+            gap: $min-gap * 1rem;
         }
 
         .header_content-wrapper {
@@ -287,8 +302,8 @@ header {
 
             margin-bottom: 1.18rem;
 
-            border: solid;
-            border-width: 1px;
+            // border: solid;
+            // border-width: 1px;
 
             .header_positional {
                 position: absolute;
