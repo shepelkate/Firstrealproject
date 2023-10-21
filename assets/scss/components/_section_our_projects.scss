@@ -11,14 +11,14 @@
     grid-template-rows: 1fr 1fr;
     max-width: 86rem;
     max-height: 80rem;
-    /*
+
     @media screen and (max-width: 960px) {
         displa: flex;
         flex-directio: column-reverse;
-        ma-width: 40.27273rem;
-        ma-height: 86.9375rem;
+        max-width: 40rem;
+        max-height: 80rem;
     }
-*/
+
     border: 2px solid rgb(9, 255, 0);
 }
 
@@ -31,11 +31,11 @@
     max-height: 35rem;
     left: 0;
     top: 97px;
-    /*
+
     @media screen and (max-width: 480px) {
-        paddin: 0.9rem 0.9rem 0.5rem 0.9rem;
+        padding: 0.9rem 0.9rem 0.5rem 0.9rem;
     }
-*/
+
     border: 2px solid rgb(208, 19, 88);
 }
 
@@ -46,11 +46,11 @@
     max-height: 29rem;
     left: 0;
     top: 830px;
-    /*
+
     @media screen and (max-width: 480px) {
-        paddin: 0.9rem 0.9rem 0.5rem 0.9rem;
+        padding: 0.9rem 0.9rem 0.5rem 0.9rem;
     }
-    */
+
     border: 2px solid rgb(197, 13, 77);
 }
 
@@ -149,19 +149,27 @@ ul {
         font-size: 1rem;
     }
 
+    @media screen and (max-width: 960px) {
+        max-width: 28.6rem;
+        align-self: center;
+        font-size: 1rem;
+    }
+
+    @media screen and (max-width: 635px) {
+        font-size: 1rem;
+    }
+
     @media screen and (max-width: 480px) {
+        max-width: 17.5rem;
         font-size: 0.8rem;
     }
 
     border: 2px solid rgb(0, 255, 208);
-
-
-
 }
 
 
 .our_projects__button {
     margin: auto;
-
+    align-self: center;
     border: 2px solid rgb(0, 166, 255);
 }
