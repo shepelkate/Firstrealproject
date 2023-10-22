@@ -253,7 +253,9 @@
 .news__block-img {
   display: grid;
   grid-template-columns: 1fr 2vw 1fr;
+  grid-template-rows: 12.5rem 12.5rem;
   gap: 1vw;
+
   @media screen and (max-width: 480px) {
     display: flex;
     flex-direction: column;
