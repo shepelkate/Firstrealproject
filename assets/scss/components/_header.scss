@@ -6,7 +6,7 @@ $inner-width: calc(62.72727rem + $general-horizontal-margin);
     $page-diff: $start-width - $stop-width;
     $size-diff: $max-size - $min-size;
 
-    $stop-width-rem: $stop-width / $rem * 1rem;
+    $stop-width-rem: calc($stop-width / $rem * 1rem);
     $min-size-rem: $min-size * 1rem;
 
     $factor: calc((100vw - $stop-width-rem) / ($page-diff));
@@ -308,60 +308,6 @@ header {
             .header_positional {
                 position: absolute;
             }
-            .header_wd {
-                $minw: 0;
-                $maxw: 0;
-                left: 39%;
-                top: 0%;
-            }
-            .header_rc {
-                $minw: 0;
-                $maxw: 0;
-                left: 0%;
-                top: 13.06%;
-            }
-            .header_ps {
-                $minw: 0;
-                $maxw: 0;
-                left: 11.8%;
-                top: 11.18%;
-            }
-            .header_pl {
-                $minw: 0;
-                $maxw: 0;
-                left: 35.8%;
-                top: 17.42%;
-            }
-            .header_pm {
-                $minw: 0;
-                $maxw: 0;
-                left: 3%;
-                top: 49.93%;
-            }
-            .header_wc {
-                $minw: 0;
-                $maxw: 0;
-                left: 42.4%;
-                top: 58.78%;
-            }
-            .header_rs {
-                $minw: 0;
-                $maxw: 0;
-                left: 37%;
-                top: 55.59%;
-            }
-            .header_br {
-                $minw: 0;
-                $maxw: 0;
-                left: 48.4%;
-                top: 61.5%;
-            }
-            .header_rd {
-                $minw: 0;
-                $maxw: 0;
-                right: 0%;
-                bottom: 0%;
-            }
-        }
+                    }
     }
 }
