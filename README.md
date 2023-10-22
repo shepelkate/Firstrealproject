@@ -1,13 +1,14 @@
   <h1 align="center">Сайт для АНО "Растим в Добре"</h1>
 
   <p align="center">
-    Сайт выполнен нашей командой начинающих разработчиц для автономной некомерчесской организации "Центр содействия инклюзивного образования детей  ограниченными возможностями здоровья "Растим в добре"".
+    Сайт выполнен нашей командой начинающих разработчиц для автономной некомерчесской организации "Центр содействия инклюзивного образования детей  ограниченными возможностями здоровья "Растим в добре"". </p>
+  
     
     
-    [Основной контент организации](https://vk.com/anorastimvdobre)
+  [Основной контент организации](https://vk.com/anorastimvdobre)
 
 
-    [Использованный макет в Figma](https://www.figma.com/file/7xFd3At9abMve9v4fU8uQb/Landing-Page%2F-Растим-в-добре-FINAL?type=design&node-id=0-1&mode=design&t=TeJWZKNaPBQUw3uY-0)
+  [Использованный макет в Figma](https://www.figma.com/file/7xFd3At9abMve9v4fU8uQb/Landing-Page%2F-Растим-в-добре-FINAL?type=design&node-id=0-1&mode=design&t=TeJWZKNaPBQUw3uY-0)
     ·
   
 
