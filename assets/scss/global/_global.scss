@@ -5,6 +5,10 @@
   font-family: "Arsenal_Bold", Arial, sans-serif;
   font-size: 22px;
 }
+$rem: 22;
+html {
+  font-size: calc($rem * 1px);
+}
 
 a {
   text-decoration: none;
@@ -54,7 +58,7 @@ a {
   box-sizing: border-box;
   color: white;
   background: $red;
-  font-family: "NunitoSans", Arial, sans-serif;
+  font-family: "Nunito_Sans", Arial, sans-serif;
   line-height: normal;
   letter-spacing: 4px;
   box-shadow: $shadow;
@@ -63,6 +67,13 @@ a {
   text-transform: uppercase;
   text-align: center;
   white-space: nowrap;
+  @media screen and (max-width: 480px) {
+    font-size: 0.8rem;
+  }
+  @media screen and (max-width: 375px) {
+    font-size: 0.5rem;
+    padding: 0.5rem;
+  }
 }
 
 .button-red:hover {
@@ -76,7 +87,7 @@ a {
   box-sizing: border-box;
   color: white;
   background: $blue;
-  font-family: "NunitoSans", Arial, sans-serif;
+  font-family: "Nunito_Sans", Arial, sans-serif;
   line-height: normal;
   letter-spacing: 4px;
   box-shadow: $shadow;
@@ -85,6 +96,12 @@ a {
   text-transform: uppercase;
   text-align: center;
   white-space: nowrap;
+  @media screen and (max-width: 480px) {
+    font-size: 0.8rem;
+  }
+  @media screen and (max-width: 375px) {
+    padding: 0.5rem;
+  }
 }
 
 .button-blue:hover {
