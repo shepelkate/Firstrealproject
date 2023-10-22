@@ -1,7 +1,3 @@
-$general-horizontal-margin: 1.36rem;
-$inner-width: calc(62.72727rem + $general-horizontal-margin);
-$inner-min-width: calc(15.45rem + $general-horizontal-margin);
-
 // -- some math magic goes on here --
 @function adaptive-shrink($start-width, $stop-width, $max-size, $min-size) {
     $page-diff: $start-width - $stop-width;
@@ -21,12 +17,6 @@ $inner-min-width: calc(15.45rem + $general-horizontal-margin);
     @return calc($min * 1px + ($max - $min) * $factor);
 }
 
-body {
-    max-width: $inner-width;
-    min-width: $inner-min-width;
-    margin: auto;
-    min-width: 340px;
-}
 
 .header {
     max-width: $inner-width;

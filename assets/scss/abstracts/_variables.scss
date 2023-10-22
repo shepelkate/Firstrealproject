@@ -15,3 +15,10 @@ $pink: #f27377;
 $light-blue: #739ef2;
 
 $blood-red: #eb1720;
+
+
+
+//spacing
+$general-horizontal-margin: 1.36rem;
+$inner-width: calc(62.72727rem + $general-horizontal-margin);
+$inner-min-width: calc(15.45rem + $general-horizontal-margin);
