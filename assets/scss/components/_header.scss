@@ -1,5 +1,6 @@
 $general-horizontal-margin: 1.36rem;
 $inner-width: calc(62.72727rem + $general-horizontal-margin);
+$inner-min-width: calc(15.45rem + $general-horizontal-margin);
 
 // -- some math magic goes on here --
 @function adaptive-shrink($start-width, $stop-width, $max-size, $min-size) {
@@ -22,7 +23,9 @@ $inner-width: calc(62.72727rem + $general-horizontal-margin);
 
 body {
     max-width: $inner-width;
+    min-width: $inner-min-width;
     margin: auto;
+    min-width: 340px;
 }
 
 header {
@@ -34,6 +37,7 @@ header {
     border-radius: 0.68rem;
     display: flex;
     flex-direction: column;
+    
     // min-width: 960px;
     .test {
         display: none;
@@ -114,11 +118,10 @@ header {
             $min-gap: 0.57;
             gap: adaptive-shrink(1440, 960, $max-gap, $min-gap);
             margin-top: 1.59rem;
-            
+
             $max-margin-right: 1.82;
             $min-margin-right: 0.94;
             margin-right: adaptive-shrink(1440, 960, $max-margin-right, $min-margin-right);
-
 
             a {
                 color: var(--unnamed, var(--unnamed, #000));
@@ -154,12 +157,10 @@ header {
         align-items: flex-start;
         justify-items: center;
         flex-direction: row;
-        @media screen and (max-width:960px) {
+        @media screen and (max-width: 960px) {
             flex-direction: column;
             align-items: flex-end;
-            
         }
-
 
         $max-gap: 2.32;
         $min-gap: -0.3;
@@ -201,9 +202,8 @@ header {
             gap: $about-us-gap;
             // margin-left: 5.68rem;
             max-width: 28.2rem;
-            @media screen and (max-width:960px) {
+            @media screen and (max-width: 960px) {
                 max-width: unset;
-                
             }
 
             .header_p_wrapper {
@@ -309,7 +309,15 @@ header {
             @media screen and (max-width: 960px) {
                 width: $min-width * 1rem;
                 height: $min-height * 1rem;
+            }
+            @media screen and (max-width: 768px) {
+                $min-width: 13.04545;
+                $max-width: 19.36364;
+                width: adaptive-shrink(768, 480, $max-width, $min-width);
 
+                $min-height: 18.18182;
+                $max-height: 27.04545;
+                height: adaptive-shrink(768, 480, $max-height, $min-height);
             }
 
             margin-bottom: 1.18rem;
@@ -320,8 +328,6 @@ header {
             .header_positional {
                 position: absolute;
             }
-                    }
-
-        
+        }
     }
 }
