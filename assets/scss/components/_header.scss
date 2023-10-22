@@ -124,11 +124,6 @@ header {
 
             @media screen and (max-width: 960px) {
                 display: none;
-                margin-right: $min-margin-right * 1rem;
-                gap: $min-gap * 1rem;
-                a {
-                    font-size: 18px;
-                }
             }
         }
     }
