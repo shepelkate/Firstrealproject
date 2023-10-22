@@ -37,6 +37,16 @@ header {
     border-radius: 0.68rem;
     display: flex;
     flex-direction: column;
+    @media screen and (max-width: 767px) {
+        margin-top: 0;
+        margin-left: 0;
+        margin-right: 0;
+        // border-radius: 0;
+        // border-bottom-left-radius: 0.68rem;
+        // border-bottom-right-radius: 0.68rem;
+    }
+
+    
     // min-width: 960px;
     .test {
         display: none;
@@ -61,6 +71,8 @@ header {
             flex-shrink: 0;
             gap: 0.3rem;
             margin-top: 1.36rem;
+            
+        
 
             //vars for logo adaptive behaivor (may be wraped to function)
             //-- left margin (rems) ------
@@ -89,6 +101,10 @@ header {
             }
             @media screen and (max-width: 960px) {
                 max-width: $logo-min-width * 1rem;
+            }
+            @media screen and (max-width: 767px) {
+                margin-left: 1.59rem;
+                margin-top: 0.5rem;
             }
         }
 
@@ -135,6 +151,8 @@ header {
             @media screen and (min-width: 960px) {
                 display: none;
             }
+            margin-top: 1.59rem;
+            margin-right: 1.59rem;
 
             .header_hamburger {
                 display: block;
@@ -146,16 +164,26 @@ header {
             
             }
 
-            .header_hamburger.active .bar:nth-child(2) {
+            .header_bar {
+                display: block;
+                width: 30px;
+                height: 2px;
+                margin: 10px auto;
+                -webkit-transition: all 0.3s ease-in-out;
+                transition: all 0.3s ease-in-out;
+                background-color: #101010;
+            }
+
+            .header_hamburger.active .header_bar:nth-child(1) {
+                transform: translateY(12px) rotate(45deg);
+            }
+
+            .header_hamburger.active .header_bar:nth-child(2) {
                 opacity: 0;
             }
 
-            .header_hamburger.active .bar:nth-child(1) {
-                transform: translateY(8px) rotate(45deg);
-            }
-
-            .header_hamburger.active .bar:nth-child(3) {
-                transform: translateY(-8px) rotate(-45deg);
+            .header_hamburger.active .header_bar:nth-child(3) {
+                transform: translateY(-12px) rotate(-45deg);
             }
 
             .header_menu {
@@ -167,7 +195,7 @@ header {
                 top: 0;
                 right: 0;
                 z-index: 99;
-                background-color: rgba(255, 255, 255);
+                background-color: rgba(255, 255, 255, 0.9);
                 box-shadow: $box-shadow;
                 border-radius: 0.68rem;
 
@@ -181,7 +209,7 @@ header {
 
                 padding-left: 0.45rem;
                 margin-right: 0.5rem;
-                margin-top: 2rem;
+                margin-top: 2.2rem;
                 min-width: 9.36rem;
 
                 h3 {
@@ -244,6 +272,10 @@ header {
             margin-left: $margin-left-min * 1rem;
             margin-right: $margin-right-min * 1rem;
             gap: $min-gap * 1rem;
+        }
+        @media screen and (max-width: 767px) {
+            margin-left: 1.36rem;
+            margin-right: 1.36rem;
         }
 
         .header_content-wrapper {
