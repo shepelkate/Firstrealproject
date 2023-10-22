@@ -51,12 +51,17 @@ body {
     justify-content: space-between;
 
     .header__logo {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-shrink: 0;
-        gap: 0.3rem;
-        margin-top: 1.36rem;
+        background-image: url(../icons/логотип.svg);
+        background-attachment: local;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 300px;
+        // display: flex;
+        // justify-content: center;
+        // align-items: center;
+        // flex-shrink: 0;
+        // gap: 0.3rem;
+
         //vars for logo adaptive behaivor
         //-- left margin (rems) ------
         $logo-left-margin-min: 0.45;
@@ -67,11 +72,17 @@ body {
         //-- width (rems) ------------
         $logo-max-width: 13.63636;
         $logo-min-width: 9.09091;
+        //-- height (rems) -----------
+        $logo-max-height: 4.5;
+        $logo-min-height: 3;
 
         //magic
         margin-left: adaptive-shrink(1440, 1280, $logo-left-margin-max, $logo-left-margin-min);
         margin-top: adaptive-shrink(1440, 1280, $logo-top-margin-max, $logo-top-margin-min);
-        max-width: $logo-max-width * 1rem;
+        
+        
+        width: $logo-max-width * 1rem;
+        height: $logo-max-height * 1rem;
 
         @media screen and (min-width: 1440px) {
             margin-left: $logo-left-margin-max * 1rem;
@@ -80,14 +91,16 @@ body {
         @media screen and (max-width: 1280px) {
             margin-left: $logo-left-margin-min * 1rem;
             margin-top: $logo-top-margin-min * 1rem;
-            max-width: adaptive-shrink(1280, 960, $logo-max-width, $logo-min-width);
+            width: adaptive-shrink(1280, 960, $logo-max-width, $logo-min-width);
+            height: adaptive-shrink(1280, 960, $logo-max-height, $logo-min-height);
         }
         @media screen and (max-width: 960px) {
-            max-width: $logo-min-width * 1rem;
+            width: $logo-min-width * 1rem;
+            height: $logo-min-height * 1rem;
         }
         @media screen and (max-width: 767px) {
             margin-left: 1.59rem;
-            margin-top: 0.5rem;
+            margin-top: 1.36rem;
         }
     }
 
@@ -105,7 +118,8 @@ body {
 
         a {
             color: var(--unnamed, var(--unnamed, #000));
-            font-family: "Arsenal_Bold";
+            font-family: "Nunito Sans", sans-serif;
+            font-weight: bold;
             text-overflow: ellipsis;
             font-size: adaptive-font(1440, 960, 20, 18) // font-style: normal;
                 // font-weight: normal;
@@ -192,20 +206,11 @@ body {
             margin-top: 2.4rem;
             min-width: 9.36rem;
 
-            h3 {
-                font-family: NunitoSans;
-                font-size: 1.5rem;
-                font-style: normal;
-                font-weight: 700;
-                line-height: normal;
-                margin: 0;
-            }
-
             .header__map-link {
-                font-family: NunitoSans;
+                font-family: "Nunito Sans", sans-serif;
                 font-size: 1.3rem;
                 font-style: normal;
-                font-weight: 100;
+                font-weight: 400;
                 line-height: normal;
                 margin: 0;
                 // -webkit-transition: text-decoration 0.05s ease-in-out;
