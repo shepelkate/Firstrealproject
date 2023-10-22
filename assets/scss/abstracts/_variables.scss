@@ -2,9 +2,13 @@ $red: #9c0d13;
 
 $blue: #0e3c87;
 
-$shadow: 4px 4px 4px 0px rgba(3, 116, 76, 0.25),
+$shadow:
+  4px 4px 4px 0px rgba(3, 116, 76, 0.25),
   6px 6px 6px 0px rgba(3, 116, 76, 0.25) inset,
   -6px -6px 6px 0px rgba(0, 0, 0, 0.25) inset;
+
+$box-shadow: 4px 4px 4px 0px rgba(3, 116, 76, 0.25);
+
 
 $pink: #f27377;
 
