@@ -72,7 +72,7 @@ h3 {
     padding-left: 30px;
 }
 
-.contacts_header {
+.contacts__header {
     margin-bottom: 15px
 }
 
@@ -214,7 +214,7 @@ h3 {
         font-weight: 700;
         line-height: 140%;
         /* 0.76364rem */
-        margin: 3.64rem 1.2rem;
+        margin: 3.64rem 0rem 3.64rem 1.2rem;
     }
 
     .map__link,
@@ -231,6 +231,7 @@ h3 {
     .contacts {
         width: 12rem;
         padding-left: 40px;
+        margin-left: 1.36rem;
     }
 
 
@@ -288,4 +289,37 @@ line-height: 200%; /* 24px */
     .copyright__link {
         font-size: 0.54545rem;
     }
+}
+@media all and (max-width: 360px) {
+    .about-f {
+        flex-direction: column;
+        margin: 60px auto 0;
+        padding: 0;
+
+    }
+
+    .about-f__text {
+        margin: 10px;
+    }
+
+    .about-f__button {
+        margin: auto;
+        margin-left: 10px;
+    }
+
+    .contacts {
+        width: auto;
+        margin: auto;
+    
+    }
+
+    .contacts__header {
+        margin: 0;
+    }
+
+    .contacts__list {
+        padding: 5px;
+        margin-top: 0;
+    }
+
 }
