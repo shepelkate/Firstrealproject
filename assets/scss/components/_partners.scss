@@ -2,7 +2,7 @@
   box-sizing: border-box;
   margin: 3% auto;
   padding: 0.5rem;
-  max-width: 56rem;
+  max-width: 59.1rem;
   display: grid;
   grid-template-columns: 60% 40%;
 
@@ -67,13 +67,18 @@
   row-gap: 5%;
   padding: 1rem;
   margin: auto;
+
+  ul {
+    margin-top: 0.41rem;
+  }
+
   li {
     list-style: inside url(/assets/icons/check_mark.svg);
     color: rgba(0, 0, 0, 0.7);
     font-size: 1.27273rem;
-    line-height: 1.65rem;
-    letter-spacing: 0.07rem;
-    padding: 0.3rem;
+    line-height: 130%;
+    letter-spacing: 0.05rem;
+    padding: 0.1rem;
     white-space: nowrap;
     @media (max-width: 960px) {
       font-size: 1.18rem;
@@ -105,11 +110,11 @@
   }
 }
 
-.partners__item1_list,
-.partners__item2_list {
+.partners__item_list {
   max-width: 100%;
   display: grid;
   padding: 0%;
+  align-self: flex-start;
 }
 
 .partners__item1_title {
@@ -119,18 +124,16 @@
 }
 
 .partners__aside {
-  position: relative;
-  max-width: 20rem;
-  max-height: 23rem;
+  display: block;
+  position:static;
+  // max-width: 20rem;
+  // max-height: 23rem;
   z-index: -1;
-  img {
-    position: absolute;
-    top: 20%;
-    max-width: 100%;
-    max-height: 100%;
-    @media (max-width: 960px) {
-      position: static;
-    }
+
+  max-width: 100%;
+  max-height: 100%;
+  @media (max-width: 960px) {
+    position: static;
   }
 }
 
