@@ -27,4 +27,4 @@
 - [Михайлов Юлия](https://github.com/rkvrpl)
 - [Шамраева Виктория](https://github.com/april-victory)
 - [Кошелева Елена](https://github.com/Eva71879)
-- [Полина](https://github.com/Taarde)
+- [Полина Стерлигова](https://github.com/Taarde)
