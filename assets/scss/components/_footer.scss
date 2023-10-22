@@ -159,6 +159,11 @@ h3 {
     color: black;
 }
 
+.copyrigth__link:hover {
+    text-decoration: underline;
+}
+
+
 @media all and (max-width: 960px) {
     .about-f__logo {
         width: 9.09091rem;
@@ -209,7 +214,6 @@ h3 {
         margin: 3.64rem 0rem 3.64rem 1.2rem;
     }
 
-    .map__link,
     .contacts__link {
         font-family: Nunito Sans;
         font-size: 0.72727rem;
@@ -254,31 +258,51 @@ h3 {
     }
 
     .menu.active {
-        display: block;
         position: absolute;
-        top: 0;
-        right: 0;
-        z-index: 1;
-        width: 30%;
-        background-color: rgba(255, 255, 255, 0.8);
-        padding-left: 10px;
+                top: 0;
+                right: 0;
+                z-index: 99;
+                background-color: rgba(255, 255, 255);
+                box-shadow: $box-shadow;
+                border-radius: 0.68rem;
+
+                display: flex;
+                gap: 0.1rem;
+                flex-wrap: nowrap;
+                align-content: center;
+                justify-content: center;
+                flex-direction: column;
+                align-items: flex-start;
+
+                padding-left: 0.45rem;
+                margin-right: 0.5rem;
+                margin-top: 2rem;
+                min-width: 9.36rem;
     }
+
+     .map__link {
+                    
+                    font-family: NunitoSans;
+                    font-size: 1.3rem;
+                    font-style: normal;
+                    font-weight: 100;
+                    line-height: normal;
+                    margin: 0;
+                }
 
     .map__list {
         padding-left: 0;
     }
 
     .copyright__text,
-    .copyright__authors {
-        font-size: 0.54545rem;
-        font-style: normal;
-        font-weight: 700;
-        line-height: 200%; /* 24px */
+    .copyright__authors,
+    .copyrigth__link {
+    font-size: 0.54545rem;
+font-style: normal;
+font-weight: 700;
+line-height: 200%; /* 24px */
     }
 
-    .copyright__link {
-        font-size: 0.54545rem;
-    }
 }
 @media all and (max-width: 360px) {
     .about-f {

@@ -67,6 +67,13 @@ a {
   text-transform: uppercase;
   text-align: center;
   white-space: nowrap;
+  @media screen and (max-width: 480px) {
+    font-size: 0.8rem;
+  }
+  @media screen and (max-width: 375px) {
+    font-size: 0.5rem;
+    padding: 0.5rem;
+  }
 }
 
 .button-red:hover {
@@ -89,6 +96,12 @@ a {
   text-transform: uppercase;
   text-align: center;
   white-space: nowrap;
+  @media screen and (max-width: 480px) {
+    font-size: 0.8rem;
+  }
+  @media screen and (max-width: 375px) {
+    padding: 0.5rem;
+  }
 }
 
 .button-blue:hover {
