@@ -3,6 +3,7 @@
     margin: 60px 30px 25px;
     padding-top: 1rem;
     position: relative;
+    border-radius: 15px;
 
 }
 
@@ -15,14 +16,21 @@ ul {
 }
 
 h3 {
-    font-family: Nunito Sans;
+    font-family: NunitoSans;
     font-size: 1.09091rem;
     font-style: normal;
     font-weight: 700;
     line-height: normal
 }
 
-.hamburger, .menu {
+.map__link:hover,
+.contacts__link:hover,
+.copyrigth__link:hover {
+    text-decoration: underline;
+}
+
+.hamburger,
+.menu {
     display: none;
 }
 
@@ -35,14 +43,22 @@ h3 {
     transition: all 0.3s ease-in-out;
     background-color: #101010;
 }
+.map__header {
+    margin-bottom: 0
+}
 
-a {
+.map__list {
+    margin: 0;
+}
+.map__link,
+.contacts__link {
     color: black;
-    font-family: Nunito Sans;
+    font-family: NunitoSans;
     font-size: 0.90909rem;
     font-style: normal;
     font-weight: 700;
     line-height: 200%;
+
     /* 1.81818rem */
 }
 
@@ -52,7 +68,17 @@ a {
 }
 
 .contacts {
-    width: 33%
+    width: 33%;
+    padding-left: 30px;
+}
+
+.contacts_header {
+    margin-bottom: 15px
+}
+
+
+.contacts__list {
+    padding-left: 40px;
 }
 
 .about-f__logo {
@@ -61,7 +87,7 @@ a {
 }
 
 .about-f__text {
-    font-family: Arsenal;
+    font-family: Arsenal_Bold;
     font-size: 1rem;
     font-style: normal;
     font-weight: 700;
@@ -83,7 +109,7 @@ a {
 
 
 .social {
-        position: absolute;
+    position: absolute;
     right: 20px;
     bottom: 40px;
 }
@@ -103,14 +129,16 @@ a {
     content: url('../icons/footer_tel_icon.svg');
     display: inline-block;
     vertical-align: middle;
-    padding-right: 15px;
+    margin-left: -40px;
+    position: absolute;
 }
 
 .mail:before {
     content: url('../icons/footer_email_icon.svg');
     display: inline-block;
     vertical-align: middle;
-    padding-right: 15px;
+    margin-left: -40px;
+    position: absolute;
 }
 
 
@@ -118,7 +146,8 @@ a {
     content: url('../icons/footer_maps_icon.svg');
     display: inline-block;
     vertical-align: middle;
-    padding-right: 15px;
+    margin-left: -40px;
+    position: absolute;
 }
 
 .copyright {
@@ -127,8 +156,12 @@ a {
 
 .copyright__text::before {
     content: url(../icons/footer_c_icon.svg);
-        display: inline-block;
+    display: inline-block;
     vertical-align: middle;
+}
+
+.copyrigth__link {
+    color: black;
 }
 
 
@@ -139,7 +172,7 @@ a {
     }
 }
 
-@media all and (max-width: 700px) {
+@media all and (max-width: 840px) {
     .footer {
         margin: 0;
         position: relative;
@@ -175,7 +208,7 @@ a {
     .about-f__text {
         color: #000;
         text-align: justify;
-        font-family: Arsenal;
+        font-family: Arsenal_Bold;
         font-size: 0.54545rem;
         font-style: normal;
         font-weight: 700;
@@ -184,8 +217,9 @@ a {
         margin: 3.64rem 1.2rem;
     }
 
-    a {
-        font-family: Nunito Sans;
+    .map__link,
+    .contacts__link {
+        font-family: NunitoSans;
         font-size: 0.72727rem;
         font-style: normal;
         font-weight: 700;
@@ -193,7 +227,7 @@ a {
         /* 1.01818rem */
     }
 
-   
+
     .contacts {
         width: 12rem;
         padding-left: 40px;
@@ -207,10 +241,9 @@ a {
     .hamburger {
         display: block;
         float: right;
-            position: relative;
-    z-index: 2;
-    padding: 10px
-
+        position: relative;
+        z-index: 2;
+        padding: 10px
     }
 
     .hamburger.active .bar:nth-child(2) {
@@ -242,5 +275,17 @@ a {
 
     .map__list {
         padding-left: 0;
+    }
+
+    .copyright__text,
+    .copyright__authors {
+    font-size: 0.54545rem;
+font-style: normal;
+font-weight: 700;
+line-height: 200%; /* 24px */
+    }
+
+    .copyright__link {
+        font-size: 0.54545rem;
     }
 }
