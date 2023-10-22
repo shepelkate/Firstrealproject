@@ -1,9 +1,30 @@
 .projects {
   display: flex;
+  justify-content: center;
+}
+
+.projects__section {
+  display: flex;
   flex-direction: column;
   align-items: center;
   max-width: 60rem;
-  margin: 1.59rem auto;
+  margin-top: 1.59rem;
+  margin-bottom: 1.59rem;
+  
+  $side-margin: adaptive-shrink(1440, 960, $general-horizontal-margin, $tablet960-horizontal-margin);
+  margin-left: $side-margin;
+  margin-right: $side-margin;
+
+  @media screen and (max-width: 960px) {
+    margin-left: $tablet960-horizontal-margin;
+    margin-right: $tablet960-horizontal-margin;
+  }
+
+  @media screen and (max-width: 768px) {
+    margin-left: 1.41rem;
+    margin-right: 1.41rem;
+  }
+
   // padding: 1rem;
   box-sizing: border-box;
   // gap: 1rem;
@@ -45,82 +66,82 @@
 }
 
 .our_projects__text {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 1.9rem auto 2.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1.9rem auto 2.5rem;
 }
 
 .our_projects__title {
-    font-family: "Arsenal_Bold", Arial, sans-serif;
-    font-size: 1.4rem;
-    font-weight: 700;
-    line-height: 130%;
+  font-family: "Arsenal_Bold", Arial, sans-serif;
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 130%;
+  text-align: center;
+  align-self: center;
+  white-space: wrap;
+  padding-bottom: 1rem;
+
+  @media screen and (min-width: 760px) and (max-width: 960px) {
     text-align: center;
-    align-self: center;
-    white-space: wrap;
-    padding-bottom: 1rem;
+    display: flex;
+    font-size: 1rem;
+    flex-wrap: wrap;
+    word-wrap: break-word;
+  }
 
-    @media screen and (min-width: 760px) and (max-width: 960px) {
-        text-align: center;
-        display: flex;
-        font-size: 1rem;
-        flex-wrap: wrap;
-        word-wrap: break-word;
-    }
-
-    @media screen and (min-width: 480px) and (max-width: 760px) {
-        text-align: center;
-        font-size: 1rem;
-        flex-wrap: wrap;
-        word-wrap: break-word;
-    }
+  @media screen and (min-width: 480px) and (max-width: 760px) {
+    text-align: center;
+    font-size: 1rem;
+    flex-wrap: wrap;
+    word-wrap: break-word;
+  }
 }
 
 .our_projects__paragraph {
-    align-self: center;
+  align-self: center;
+  text-align: justify;
+  font-family: "Arsenal_Bold", Arial, sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 130%;
+  text-indent: 1.1rem;
+  width: 95%;
+  opacity: 0.8;
+  margin: 0;
+
+  @media screen and (min-width: 760px) and (max-width: 960px) {
+    max-width: 40rem;
     text-align: justify;
-    font-family: "Arsenal_Bold", Arial, sans-serif;
-    font-size: 1rem;
-    font-weight: 700;
-    line-height: 130%;
-    text-indent: 1.1rem;
-    width: 95%;
-    opacity: 0.8;
-    margin: 0;
+    font-size: 0.8rem;
+    flex-wrap: wrap;
+    word-wrap: break-word;
+  }
 
-    @media screen and (min-width: 760px) and (max-width: 960px) {
-        max-width: 40rem;
-        text-align: justify;
-        font-size: 0.8rem;
-        flex-wrap: wrap;
-        word-wrap: break-word;
-    }
-
-    @media screen and (min-width: 480px) and (max-width: 760px) {
-        text-align: justify;
-        max-width: 19rem;
-        font-size: 0.7rem;
-        word-wrap: break-word;
-        flex-wrap: wrap;
-    }
+  @media screen and (min-width: 480px) and (max-width: 760px) {
+    text-align: justify;
+    max-width: 19rem;
+    font-size: 0.7rem;
+    word-wrap: break-word;
+    flex-wrap: wrap;
+  }
 }
 
 .our_projects__button {
-    width: 21.9rem;
+  width: 21.9rem;
+  justify-content: center;
+  align-items: center;
+  margin: 2.5rem auto 1.6rem;
+
+  @media screen and (min-width: 760px) and (max-width: 960px) {
     justify-content: center;
     align-items: center;
-    margin: 2.5rem auto 1.6rem;
+    margin: 2.5rem auto 2.5rem;
+  }
 
-    @media screen and (min-width: 760px) and (max-width: 960px) {
-        justify-content: center;
-        align-items: center;
-        margin: 2.5rem auto 2.5rem;
-    }
-
-    @media screen and (min-width: 480px) and (max-width: 760px) {
-        justify-content: center;
-        align-items: center;
-        margin: 2.5rem auto 1.8rem;
-    }
+  @media screen and (min-width: 480px) and (max-width: 760px) {
+    justify-content: center;
+    align-items: center;
+    margin: 2.5rem auto 1.8rem;
+  }
 }

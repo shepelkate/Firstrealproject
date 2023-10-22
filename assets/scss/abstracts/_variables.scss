@@ -19,6 +19,31 @@ $blood-red: #eb1720;
 
 
 //spacing
-$general-horizontal-margin: 1.36rem;
-$inner-width: calc(62.72727rem + $general-horizontal-margin);
-$inner-min-width: calc(15.45rem + $general-horizontal-margin);
+//desktop
+$general-horizontal-margin: 1.36;
+$inner-width: calc(62.72727rem + $general-horizontal-margin * 1rem);
+$inner-min-width: calc(15.45rem + $general-horizontal-margin * 1rem);
+
+//tablet
+$tablet960-horizontal-margin: 0.73;
+
+
+
+//functions
+@function adaptive-shrink($start-width, $stop-width, $max-size, $min-size) {
+  $page-diff: $start-width - $stop-width;
+  $size-diff: $max-size - $min-size;
+
+  $stop-width-rem: calc($stop-width / $rem * 1rem);
+  $min-size-rem: $min-size * 1rem;
+
+  $factor: calc((100vw - $stop-width-rem) / ($page-diff));
+  $factor-rem: calc($factor * $rem);
+
+  @return calc($min-size-rem + $size-diff * $factor-rem); //rems
+}
+
+@function adaptive-font($start, $end, $max, $min) {
+  $factor: calc((100vw - $end * 1px) / ($start - $end));
+  @return calc($min * 1px + ($max - $min) * $factor);
+}
