@@ -1,6 +1,11 @@
 // -- some math magic goes on here --
 
 .header {
+
+    border-radius: 0.68rem;
+    display: flex;
+    flex-direction: column;
+
     max-width: $inner-width;
     background-color: $light-blue;
     margin-top: 1.14rem;
@@ -8,24 +13,20 @@
     $header-side-margin: adaptive-shrink(1440, 960, $general-horizontal-margin, $tablet960-horizontal-margin);
     margin-left: $header-side-margin;
     margin-right: $header-side-margin;
-    @media screen and (min-width: 1440px) {
+    @media screen and (min-width: 1440px) { //desktop
         margin-left: $general-horizontal-margin * 1rem;
         margin-right: $general-horizontal-margin * 1rem;
     }
-    @media screen and (max-width: 960px) {
+    @media screen and (max-width: 960px) { //tablet
         margin-left: $tablet960-horizontal-margin * 1rem;
         margin-right: $tablet960-horizontal-margin * 1rem;
     }
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 767px) { //mobile
         margin-top: 0;
         margin-left: 0;
         margin-right: 0;
     }
-
-
-    border-radius: 0.68rem;
-    display: flex;
-    flex-direction: column;
+    
 }
 
 .header__top-container {
