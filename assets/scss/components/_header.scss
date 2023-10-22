@@ -37,7 +37,6 @@ header {
     border-radius: 0.68rem;
     display: flex;
     flex-direction: column;
-    
     // min-width: 960px;
     .test {
         display: none;
@@ -48,6 +47,21 @@ header {
         min-height: 10rem;
         background-color: #000;
     }
+
+    .header_triangle-wrapper{
+        width: 0px;
+        height: 0px;
+        position: relative;
+        .header_triangle {
+            position: absolute;
+            width: 7.72727rem;
+            height: 7.72727rem;
+            left: 0%;
+            bottom: 0%;
+            z-index: 1;
+        }
+    }
+
 
     .header_top-container {
         display: flex;
@@ -202,6 +216,7 @@ header {
             gap: $about-us-gap;
             // margin-left: 5.68rem;
             max-width: 28.2rem;
+            z-index: 2;
             @media screen and (max-width: 960px) {
                 max-width: unset;
             }
@@ -288,6 +303,7 @@ header {
                 margin-bottom: 1.45rem;
                 align-self: center;
                 justify-self: end;
+                z-index: 2;
             }
         }
 
