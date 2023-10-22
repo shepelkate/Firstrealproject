@@ -1,6 +1,25 @@
 .projects {
   display: flex;
   justify-content: center;
+
+  $projects-side-margin: adaptive-shrink(1440, 960, $general-horizontal-margin, $tablet960-horizontal-margin);
+  margin-left: $projects-side-margin;
+  margin-right: $projects-side-margin;
+
+  @media screen and (min-width: 1440px) {
+    margin-left: $general-horizontal-margin * 1rem;
+    margin-right: $general-horizontal-margin * 1rem;
+  }
+
+  @media screen and (max-width: 960px) {
+    margin-left: $tablet960-horizontal-margin * 1rem;
+    margin-right: $tablet960-horizontal-margin * 1rem;
+  }
+
+  @media screen and (max-width: 768px) {
+    margin-left: 1.41rem;
+    margin-right: 1.41rem;
+  }
 }
 
 .projects__section {
@@ -10,20 +29,6 @@
   max-width: 60rem;
   margin-top: 1.59rem;
   margin-bottom: 1.59rem;
-  
-  $side-margin: adaptive-shrink(1440, 960, $general-horizontal-margin, $tablet960-horizontal-margin);
-  margin-left: $side-margin;
-  margin-right: $side-margin;
-
-  @media screen and (max-width: 960px) {
-    margin-left: $tablet960-horizontal-margin;
-    margin-right: $tablet960-horizontal-margin;
-  }
-
-  @media screen and (max-width: 768px) {
-    margin-left: 1.41rem;
-    margin-right: 1.41rem;
-  }
 
   // padding: 1rem;
   box-sizing: border-box;

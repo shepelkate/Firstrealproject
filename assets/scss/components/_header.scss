@@ -1,29 +1,31 @@
 // -- some math magic goes on here --
 
-
 .header {
     max-width: $inner-width;
     background-color: $light-blue;
     margin-top: 1.14rem;
 
-    $side-margin: adaptive-shrink(1440, 960, $general-horizontal-margin, $tablet960-horizontal-margin);
-    margin-left: $side-margin;
-    margin-right: $side-margin;
-    
-    @media screen and (max-width: 960px) {
-        margin-left: $tablet960-horizontal-margin;
-        margin-right: $tablet960-horizontal-margin;
+    $header-side-margin: adaptive-shrink(1440, 960, $general-horizontal-margin, $tablet960-horizontal-margin);
+    margin-left: $header-side-margin;
+    margin-right: $header-side-margin;
+    @media screen and (min-width: 1440px) {
+        margin-left: $general-horizontal-margin * 1rem;
+        margin-right: $general-horizontal-margin * 1rem;
     }
-
+    @media screen and (max-width: 960px) {
+        margin-left: $tablet960-horizontal-margin * 1rem;
+        margin-right: $tablet960-horizontal-margin * 1rem;
+    }
     @media screen and (max-width: 767px) {
         margin-top: 0;
         margin-left: 0;
         margin-right: 0;
     }
+
+
     border-radius: 0.68rem;
     display: flex;
     flex-direction: column;
-
 }
 
 .header__top-container {
@@ -61,8 +63,7 @@
         //magic
         margin-left: adaptive-shrink(1440, 1280, $logo-left-margin-max, $logo-left-margin-min);
         margin-top: adaptive-shrink(1440, 1280, $logo-top-margin-max, $logo-top-margin-min);
-        
-        
+
         width: $logo-max-width * 1rem;
         height: $logo-max-height * 1rem;
 
