@@ -139,6 +139,7 @@ header {
             }
 
             @media screen and (max-width: 960px) {
+                display: none;
                 margin-right: $min-margin-right * 1rem;
                 gap: $min-gap * 1rem;
                 a {
@@ -153,6 +154,12 @@ header {
         align-items: flex-start;
         justify-items: center;
         flex-direction: row;
+        @media screen and (max-width:960px) {
+            flex-direction: column;
+            align-items: flex-end;
+            
+        }
+
 
         $max-gap: 2.32;
         $min-gap: -0.3;
@@ -194,6 +201,10 @@ header {
             gap: $about-us-gap;
             // margin-left: 5.68rem;
             max-width: 28.2rem;
+            @media screen and (max-width:960px) {
+                max-width: unset;
+                
+            }
 
             .header_p_wrapper {
                 $line-width: 0.13636rem;
@@ -298,6 +309,7 @@ header {
             @media screen and (max-width: 960px) {
                 width: $min-width * 1rem;
                 height: $min-height * 1rem;
+
             }
 
             margin-bottom: 1.18rem;
@@ -309,5 +321,7 @@ header {
                 position: absolute;
             }
                     }
+
+        
     }
 }
