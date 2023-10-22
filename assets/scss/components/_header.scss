@@ -48,21 +48,6 @@ header {
         background-color: #000;
     }
 
-    .header_triangle-wrapper{
-        width: 0px;
-        height: 0px;
-        position: relative;
-        .header_triangle {
-            position: absolute;
-            width: 7.72727rem;
-            height: 7.72727rem;
-            left: 0%;
-            bottom: 0%;
-            z-index: 1;
-        }
-    }
-
-
     .header_top-container {
         display: flex;
         flex-direction: row;
@@ -106,24 +91,6 @@ header {
                 max-width: $logo-min-width * 1rem;
             }
         }
-        // @media screen and (min-width: 1440px) {
-        //     .header_logo {
-        //         margin-left: $logo-left-margin-max * 1rem;
-        //         margin-top: $logo-top-margin-max * 1rem;
-        //     }
-        // }
-        // @media screen and (max-width: 1280px) {
-        //     .header_logo {
-        //         margin-left: $logo-left-margin-min * 1rem;
-        //         margin-top: $logo-top-margin-min * 1rem;
-        //         max-width: adaptive-shrink(1280, 960, $logo-max-width, $logo-min-width);
-        //     }
-        // }
-        // @media screen and (max-width: 960px) {
-        //     .header_logo {
-        //         max-width: $logo-min-width * 1rem;
-        //     }
-        // }
 
         .header_menu {
             display: inline-flex;
@@ -346,4 +313,22 @@ header {
             }
         }
     }
+
+    .header_triangle-wrapper{
+        width: 0px;
+        height: 0px;
+        position: relative;
+        .header_triangle {
+            position: absolute;
+            width: 7.72727rem;
+            height: 7.72727rem;
+            left: 0%;
+            bottom: 0%;
+            z-index: 1;
+        }
+    }
+    .hidden {
+        display: none;
+    }
+
 }
