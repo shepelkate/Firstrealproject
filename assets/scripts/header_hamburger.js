@@ -1,10 +1,10 @@
-const hamburger = document.querySelector("header .test");
-console.log(hamburger);
-// const menu = document.querySelector(".menu");
+const header_hamburger = document.querySelector(".header_hamburger");
+const header_menu = document.querySelector(".header_hamburger-container .header_menu");
+console.log(menu);
 
-// hamburger.addEventListener("click", mobileMenu);
+header_hamburger.addEventListener("click", mobileMenu);
 
-// function mobileMenu() {
-//     hamburger.classList.toggle("active");
-//     // menu.classList.toggle("hidden");
-// }
+function mobileMenu() {
+    header_hamburger.classList.toggle("active");
+    header_menu.classList.toggle("active");
+}
