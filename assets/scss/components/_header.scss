@@ -127,6 +127,9 @@ header {
             }
         }
 
+
+        //НЕ ЗАБУДЬ ИЗОЛИРОВАТЬ КЛАССЫ
+        //БУРГЕР МЕНЮ НАЧИНАЕТСЯ ЗДЕСЬ
         .header_hamburger-container {
             position: relative;
 
@@ -199,6 +202,7 @@ header {
                 }
             }
         }
+        //БУРГЕР МЕНЮ КОНЧАЕТСЯ ТУТ
     }
 
     .header_content {
