@@ -1,15 +1,30 @@
 .requisites {
   position: relative;
-  margin: 2.5rem auto;
   max-width: 53.82rem;
   min-width: 11.36rem;
   background-color: $pink;
   border-radius: 0.68rem;
-  @media screen and (max-width: 1200px) {
-    margin: 2rem 1rem;
+
+  $req-max-side-margin: 4.09;
+  $req-min-side-margin: 2.27;
+  $req-side-margin: adaptive-shrink(1440, 960, $req-max-side-margin, $req-min-side-margin);
+  margin-left: $req-side-margin;
+  margin-right: $req-side-margin;
+  @media screen and (min-width: 1440px) {
+    //desktop
+    margin-left: $req-max-side-margin * 1rem;
+    margin-right: $req-max-side-margin * 1rem;
   }
   @media screen and (max-width: 960px) {
-    margin: 2rem 1rem;
+    //tablet
+    margin-left: $req-min-side-margin * 1rem;
+    margin-right: $req-min-side-margin * 1rem;
+  }
+  @media screen and (max-width: 767px) {
+    //mobile
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
   }
 }
 
