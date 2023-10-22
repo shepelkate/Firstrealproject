@@ -40,10 +40,10 @@ $tablet960-horizontal-margin: 0.73;
   $factor: calc((100vw - $stop-width-rem) / ($page-diff));
   $factor-rem: calc($factor * $rem);
 
-  @return calc($min-size-rem + $size-diff * $factor-rem); //rems
+  @return calc($min-size-rem + $size-diff * $factor-rem); //return type: rem
 }
 
 @function adaptive-font($start, $end, $max, $min) {
   $factor: calc((100vw - $end * 1px) / ($start - $end));
-  @return calc($min * 1px + ($max - $min) * $factor);
+  @return calc($min * 1px + ($max - $min) * $factor); //return type: px
 }
