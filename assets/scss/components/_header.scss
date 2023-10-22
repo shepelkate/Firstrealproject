@@ -132,6 +132,9 @@ header {
         //БУРГЕР МЕНЮ НАЧИНАЕТСЯ ЗДЕСЬ
         .header_hamburger-container {
             position: relative;
+            @media screen and (min-width: 960px) {
+                display: none;
+            }
 
             .header_hamburger {
                 display: block;
@@ -139,6 +142,8 @@ header {
                 position: relative;
                 z-index: 2;
                 padding: 10px;
+                
+            
             }
 
             .header_hamburger.active .bar:nth-child(2) {
@@ -201,7 +206,9 @@ header {
                     text-decoration: underline;
                 }
             }
+            
         }
+        
         //БУРГЕР МЕНЮ КОНЧАЕТСЯ ТУТ
     }
 
