@@ -52,7 +52,8 @@ a {
 }
 
 .contacts {
-    width: 33%
+    width: 33%;
+    padding-left: 30px;
 }
 
 .about-f__logo {
@@ -103,14 +104,16 @@ a {
     content: url('../icons/footer_tel_icon.svg');
     display: inline-block;
     vertical-align: middle;
-    padding-right: 15px;
+    margin-left: -40px;
+    position: absolute;
 }
 
 .mail:before {
     content: url('../icons/footer_email_icon.svg');
     display: inline-block;
     vertical-align: middle;
-    padding-right: 15px;
+    margin-left: -40px;
+    position: absolute;
 }
 
 
@@ -118,7 +121,8 @@ a {
     content: url('../icons/footer_maps_icon.svg');
     display: inline-block;
     vertical-align: middle;
-    padding-right: 15px;
+    margin-left: -40px;
+    position: absolute;
 }
 
 .copyright {
