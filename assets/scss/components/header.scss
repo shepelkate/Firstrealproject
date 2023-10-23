@@ -149,19 +149,26 @@
   //НЕ ЗАБУДЬ ИЗОЛИРОВАТЬ КЛАССЫ
   //БУРГЕР МЕНЮ НАЧИНАЕТСЯ ЗДЕСЬ
   .header__hamburger-container {
-    position: relative;
+      position: absolute; 
+    top: 0; 
+    right: 0; 
+    width: 400px; 
+    height: 400px;
+
+    pointer-events: none;
+    overflow-x: hidden; 
     @media screen and (min-width: 960px) {
       display: none;
     }
-    margin-top: 1.1rem;
-    margin-right: 1.59rem;
+
 
     .header__hamburger {
-      display: block;
-      float: right;
-      position: relative;
-      z-index: 2;
-      padding: 10px;
+              display: block; 
+            float: right; 
+            position: relative; 
+            z-index: 2; 
+            padding: 10px; 
+            pointer-events: all; 
     }
 
     .header__bar {
@@ -187,7 +194,42 @@
     }
 
     .header__mobile-menu {
-      display: none;
+                position: absolute;
+      top: 0;
+      right: -300px;
+      z-index: 99;
+      background-color: $header-footer-background-mobile-menu;
+      box-shadow: $box-shadow;
+      border-radius: 0.68rem;
+
+      display: flex;
+      gap: 0.1rem;
+      flex-wrap: nowrap;
+      align-content: center;
+      justify-content: center;
+      flex-direction: column;
+      align-items: flex-start;
+
+      padding-left: 0.45rem;
+      margin-right: 0.5rem;
+      margin-top: 2.4rem;
+      min-width: 9.36rem;
+
+    -webkit-transition: all 0.4s ease; 
+    -moz-transition: all 0.4s ease; 
+    -ms-transition: all 0.4s ease; 
+    transition: all 0.4s ease; 
+
+     .header__map-link {
+        font-family: "NunitoSans", Arial, sans-serif;
+        font-size: 1.3rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        margin: 0;
+        // -webkit-transition: text-decoration 0.05s ease-in-out;
+      }
+      
     }
 
     .header__mobile-menu.active {
@@ -212,15 +254,13 @@
       margin-top: 2.4rem;
       min-width: 9.36rem;
 
-      .header__map-link {
-        font-family: "NunitoSans", Arial, sans-serif;
-        font-size: 1.3rem;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
-        margin: 0;
-        // -webkit-transition: text-decoration 0.05s ease-in-out;
-      }
+          pointer-events: all; 
+    -webkit-transition: all 0.4s ease; 
+    -moz-transition: all 0.4s ease; 
+    -ms-transition: all 0.4s ease; 
+    transition: all 0.4s ease; 
+
+     
       .header__map-link:hover {
         text-decoration: underline;
       }
