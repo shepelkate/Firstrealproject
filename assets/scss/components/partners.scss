@@ -70,11 +70,12 @@
 
   ul {
     margin-top: 0.41rem;
+    padding: 0;
   }
 
   li {
-    list-style: inside url(/assets/icons/check_mark.svg);
-    color: rgba(0, 0, 0, 0.7);
+    list-style: inside url(../icons/check_mark.svg);
+    color: $partners-color;
     font-size: 1.27273rem;
     line-height: 130%;
     letter-spacing: 0.05rem;
@@ -92,7 +93,7 @@
   }
 
   span {
-    color: rgba(0, 0, 0, 0.7);
+    color: $partners-color;
     font-size: 1.27273rem;
     letter-spacing: 0.07rem;
     @media (max-width: 960px) {
@@ -125,7 +126,7 @@
 
 .partners__aside {
   display: block;
-  position:static;
+  position: static;
   // max-width: 20rem;
   // max-height: 23rem;
   z-index: -1;

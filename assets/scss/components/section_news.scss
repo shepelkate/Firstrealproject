@@ -1,5 +1,10 @@
 .news {
-  $news-side-margin: adaptive-shrink(1440, 960, $general-horizontal-margin, $tablet960-horizontal-margin);
+  $news-side-margin: adaptive-shrink(
+    1440,
+    960,
+    $general-horizontal-margin,
+    $tablet960-horizontal-margin
+  );
   margin-left: $news-side-margin;
   margin-right: $news-side-margin;
   @media screen and (min-width: 1440px) {
@@ -20,7 +25,6 @@
   }
 }
 
-
 .news__section {
   display: grid;
   grid-template-columns: 58% 42%;
@@ -37,8 +41,6 @@
     flex-direction: column-reverse;
     // max-width: 40.27273rem;
   }
-
-
 }
 .news__conteiner {
   display: flex;
@@ -60,7 +62,7 @@
   flex-direction: column;
   max-width: 28rem;
   border-radius: 10px;
-  background: rgba(115, 158, 242, 0.7);
+  background: $news-background-blue;
   padding: 1rem 1rem 0 1rem;
   @media screen and (max-width: 1250px) {
     align-self: center;
@@ -90,7 +92,7 @@
   align-self: flex-end;
   max-width: 28rem;
   border-radius: 10px;
-  background: rgba(242, 115, 119, 0.7);
+  background: $news-background-pink;
   margin: 2rem 0;
   padding: 1rem 1rem 0 1rem;
   @media screen and (max-width: 1250px) {
@@ -144,7 +146,7 @@
   align-self: center;
   text-align: justify;
   font-family: "Arsenal_Bold", Arial, sans-serif;
-  color: #000000b2;
+  color: $news-paragraph;
   font-size: 1rem;
   font-weight: 700;
   line-height: 130%;
@@ -161,7 +163,7 @@
 }
 .news__link {
   font-family: "Arsenal_Bold", Arial, sans-serif;
-  color: #000000b2;
+  color: $news-paragraph;
   text-decoration: underline;
   @media screen and (max-width: 480px) {
     font-size: 0.81818rem;
@@ -170,7 +172,7 @@
 .news__date {
   align-self: flex-end;
   font-family: "Arsenal_Bold", Arial, sans-serif;
-  color: #000000b2;
+  color: $news-paragraph;
   font-size: 0.81818rem;
   font-weight: 700;
   line-height: 130%;
@@ -229,7 +231,7 @@
   text-indent: 1.8rem;
   max-width: 25.72727rem;
   max-height: 30rem;
-  color: #000000b2;
+  color: $news-paragraph;
   margin: 0;
   @media screen and (max-width: 1200px) {
     font-size: 1.2rem;

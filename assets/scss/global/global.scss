@@ -64,7 +64,7 @@ a {
   box-sizing: border-box;
   color: white;
   background: $red;
-  font-family: "Nunito_Sans", Arial, sans-serif;
+  font-family: "NunitoSans", Arial, sans-serif;
   line-height: normal;
   letter-spacing: 4px;
   box-shadow: $shadow;
@@ -84,7 +84,7 @@ a {
 
 .button-red:hover {
   background: $pink;
-  color: black;
+  color: #000;
 }
 
 .button-blue {
@@ -93,7 +93,7 @@ a {
   box-sizing: border-box;
   color: white;
   background: $blue;
-  font-family: "Nunito_Sans", Arial, sans-serif;
+  font-family: "NunitoSans", Arial, sans-serif;
   line-height: normal;
   letter-spacing: 4px;
   box-shadow: $shadow;
@@ -112,7 +112,7 @@ a {
 
 .button-blue:hover {
   background: $light-blue;
-  color: black;
+  color: #000;
 }
 
 //Конец стилей кнопок

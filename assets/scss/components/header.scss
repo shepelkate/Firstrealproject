@@ -42,7 +42,7 @@
   justify-content: space-between;
 
   .header__logo {
-    background-image: url(./assets/icons/логотип.svg);
+    background-image: url(../icons/logo_header.svg);
     background-attachment: local;
     background-repeat: no-repeat;
     background-size: cover;
@@ -123,7 +123,7 @@
 
     a {
       color: var(--unnamed, var(--unnamed, #000));
-      font-family: "Nunito Sans", sans-serif;
+      font-family: "NunitoSans", Arial, sans-serif;
       font-weight: bold;
       text-overflow: ellipsis;
       font-size: adaptive-font(1440, 960, 20, 18);
@@ -171,7 +171,7 @@
       margin: 10px auto;
       -webkit-transition: all 0.3s ease-in-out;
       transition: all 0.3s ease-in-out;
-      background-color: #101010;
+      background-color: $header-footer-bar;
     }
 
     .header__hamburger.active .header__bar:nth-child(1) {
@@ -195,7 +195,7 @@
       top: 0;
       right: 0;
       z-index: 99;
-      background-color: rgba(255, 255, 255, 0.9);
+      background-color: $header-footer-background-mobile-menu;
       box-shadow: $box-shadow;
       border-radius: 0.68rem;
 
@@ -213,7 +213,7 @@
       min-width: 9.36rem;
 
       .header__map-link {
-        font-family: "Nunito Sans", sans-serif;
+        font-family: "NunitoSans", Arial, sans-serif;
         font-size: 1.3rem;
         font-style: normal;
         font-weight: 400;
