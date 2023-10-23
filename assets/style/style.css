@@ -899,13 +899,12 @@ a {
 .projects__text {
   display: flex;
   flex-direction: column;
-  padding: 1.9rem auto 2.5rem;
 }
 .projects__text .title-h3 {
   margin: 1rem 0;
 }
 
-.projects__text_paragraph {
+.projects__text-paragraph {
   text-indent: 1.5rem;
   text-align: justify;
   line-height: 1.5rem;
@@ -1138,24 +1137,16 @@ a {
 
 .news__title {
   text-align: start;
-  font-size: 2.18182rem;
   line-height: 130%;
 }
 @media screen and (max-width: 960px) {
   .news__title {
     align-self: center;
-    font-size: 1.81818rem;
     margin: 0.8rem 0;
-  }
-}
-@media screen and (max-width: 480px) {
-  .news__title {
-    font-size: 1.7rem;
   }
 }
 @media screen and (max-width: 430px) {
   .news__title {
-    font-size: 1rem;
     margin: 0;
   }
 }
