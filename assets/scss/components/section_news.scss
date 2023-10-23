@@ -206,18 +206,18 @@
 }
 .news__title {
   text-align: start;
-  font-size: 2.18182rem;
+  // font-size: 2.18182rem;
   line-height: 130%;
   @media screen and (max-width: 960px) {
     align-self: center;
-    font-size: 1.81818rem;
+    // font-size: 1.81818rem;
     margin: 0.8rem 0;
   }
   @media screen and (max-width: 480px) {
-    font-size: 1.7rem;
+    // font-size: 1.7rem;
   }
   @media screen and (max-width: 430px) {
-    font-size: 1rem;
+    // font-size: 1rem;
     margin: 0;
   }
 }
