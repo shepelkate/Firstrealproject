@@ -236,6 +236,16 @@
     -moz-transition: all 0.4s ease; 
     -ms-transition: all 0.4s ease; 
     transition: all 0.4s ease; 
+
+     .footer__map-link {
+      font-family: "NunitoSans", Arial, sans-serif;
+        font-size: 1.3rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        margin: 0;
+        // -webkit-transition: text-decoration 0.05s ease-in-out;
+      }
     }
 
     .footer__mobile-menu.active {
@@ -260,15 +270,13 @@
       margin-top: 2.4rem;
       min-width: 9.36rem;
 
-      .footer__map-link {
-    right: 0; 
-    pointer-events: all; 
+          pointer-events: all; 
     -webkit-transition: all 0.4s ease; 
     -moz-transition: all 0.4s ease; 
     -ms-transition: all 0.4s ease; 
     transition: all 0.4s ease; 
-        // -webkit-transition: text-decoration 0.05s ease-in-out;
-      }
+
+     
       .footer__map-link:hover {
         text-decoration: underline;
       }

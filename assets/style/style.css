@@ -554,9 +554,13 @@ a {
   }
 }
 .header__top-container .header__hamburger-container {
-  position: relative;
-  margin-top: 1.1rem;
-  margin-right: 1.59rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 400px;
+  height: 400px;
+  pointer-events: none;
+  overflow-x: hidden;
 }
 @media screen and (min-width: 960px) {
   .header__top-container .header__hamburger-container {
@@ -569,6 +573,7 @@ a {
   position: relative;
   z-index: 2;
   padding: 10px;
+  pointer-events: all;
 }
 .header__top-container .header__hamburger-container .header__bar {
   display: block;
@@ -589,7 +594,36 @@ a {
   transform: translateY(-12px) rotate(-45deg);
 }
 .header__top-container .header__hamburger-container .header__mobile-menu {
-  display: none;
+  position: absolute;
+  top: 0;
+  right: -300px;
+  z-index: 99;
+  background-color: rgba(255, 255, 255, 0.9);
+  box-shadow: 4px 4px 4px 0px rgba(3, 116, 76, 0.25);
+  border-radius: 0.68rem;
+  display: flex;
+  gap: 0.1rem;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 0.45rem;
+  margin-right: 0.5rem;
+  margin-top: 2.4rem;
+  min-width: 9.36rem;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -ms-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+.header__top-container .header__hamburger-container .header__mobile-menu .header__map-link {
+  font-family: "NunitoSans", Arial, sans-serif;
+  font-size: 1.3rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0;
 }
 .header__top-container .header__hamburger-container .header__mobile-menu.active {
   position: absolute;
@@ -610,14 +644,11 @@ a {
   margin-right: 0.5rem;
   margin-top: 2.4rem;
   min-width: 9.36rem;
-}
-.header__top-container .header__hamburger-container .header__mobile-menu.active .header__map-link {
-  font-family: "NunitoSans", Arial, sans-serif;
-  font-size: 1.3rem;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  margin: 0;
+  pointer-events: all;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -ms-transition: all 0.4s ease;
+  transition: all 0.4s ease;
 }
 .header__top-container .header__hamburger-container .header__mobile-menu.active .header__map-link:hover {
   text-decoration: underline;
@@ -2009,6 +2040,14 @@ a {
   -ms-transition: all 0.4s ease;
   transition: all 0.4s ease;
 }
+.footer .footer__hamburger-container .footer__mobile-menu .footer__map-link {
+  font-family: "NunitoSans", Arial, sans-serif;
+  font-size: 1.3rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0;
+}
 .footer .footer__hamburger-container .footer__mobile-menu.active {
   position: absolute;
   top: 0;
@@ -2028,9 +2067,6 @@ a {
   margin-right: 0.5rem;
   margin-top: 2.4rem;
   min-width: 9.36rem;
-}
-.footer .footer__hamburger-container .footer__mobile-menu.active .footer__map-link {
-  right: 0;
   pointer-events: all;
   -webkit-transition: all 0.4s ease;
   -moz-transition: all 0.4s ease;
