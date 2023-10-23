@@ -511,7 +511,7 @@ a {
   justify-content: space-between;
 }
 .header__top-container .header__logo {
-  background-image: url(../icons/логотип.svg);
+  background-image: url(./assets/icons/логотип.svg);
   background-attachment: local;
   background-repeat: no-repeat;
   background-size: cover;
