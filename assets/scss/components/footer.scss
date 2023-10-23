@@ -127,6 +127,7 @@
     position: absolute;
     right: 0.91rem;
     bottom: 1.82rem;
+    height: 30px;
   }
 
   .footer__social-list {
@@ -165,19 +166,26 @@
   }
 
   .footer__hamburger-container {
-    position: relative;
+    position: absolute; 
+    top: 0; 
+    right: 0; 
+    width: 400px; 
+    height: 400px;
+
+    pointer-events: none;
+    overflow-x: hidden; 
+
     @media screen and (min-width: 768px) {
       display: none;
     }
-    margin-top: 1.1rem;
-    margin-right: 1.59rem;
 
     .footer__hamburger {
-      display: block;
-      float: right;
-      position: relative;
-      z-index: 2;
-      padding: 10px;
+            display: block; 
+            float: right; 
+            position: relative; 
+            z-index: 2; 
+            padding: 10px; 
+            pointer-events: all; 
     }
 
     .footer__bar {
@@ -203,7 +211,31 @@
     }
 
     .footer__mobile-menu {
-      display: none;
+          position: absolute;
+      top: 0;
+      right: -300px;
+      z-index: 99;
+      background-color: $header-footer-background-mobile-menu;
+      box-shadow: $box-shadow;
+      border-radius: 0.68rem;
+
+      display: flex;
+      gap: 0.1rem;
+      flex-wrap: nowrap;
+      align-content: center;
+      justify-content: center;
+      flex-direction: column;
+      align-items: flex-start;
+
+      padding-left: 0.45rem;
+      margin-right: 0.5rem;
+      margin-top: 2.4rem;
+      min-width: 9.36rem;
+
+    -webkit-transition: all 0.4s ease; 
+    -moz-transition: all 0.4s ease; 
+    -ms-transition: all 0.4s ease; 
+    transition: all 0.4s ease; 
     }
 
     .footer__mobile-menu.active {
@@ -229,12 +261,12 @@
       min-width: 9.36rem;
 
       .footer__map-link {
-        font-family: "NunitoSans", Arial, sans-serif;
-        font-size: 1.3rem;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
-        margin: 0;
+    right: 0; 
+    pointer-events: all; 
+    -webkit-transition: all 0.4s ease; 
+    -moz-transition: all 0.4s ease; 
+    -ms-transition: all 0.4s ease; 
+    transition: all 0.4s ease; 
         // -webkit-transition: text-decoration 0.05s ease-in-out;
       }
       .footer__map-link:hover {
@@ -260,6 +292,7 @@
       position: absolute;
       top: 0;
       left: calc(50% - 2.55rem);
+      padding-bottom: 20px;
     }
 
     .footer__map {
@@ -269,9 +302,10 @@
     .footer__about-f {
       width: auto;
       display: flex;
-      flex-direction: column;
+      flex-direction: row;
       align-items: center;
       padding-top: 1rem;
+      padding-right: 1rem;
     }
 
     .footer__container-f {
