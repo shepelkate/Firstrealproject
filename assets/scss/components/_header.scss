@@ -1,7 +1,6 @@
 // -- some math magic goes on here --
 
 .header {
-
     border-radius: 0.68rem;
     display: flex;
     flex-direction: column;
@@ -13,20 +12,22 @@
     $header-side-margin: adaptive-shrink(1440, 960, $general-horizontal-margin, $tablet960-horizontal-margin);
     margin-left: $header-side-margin;
     margin-right: $header-side-margin;
-    @media screen and (min-width: 1440px) { //desktop
+    @media screen and (min-width: 1440px) {
+        //desktop
         margin-left: $general-horizontal-margin * 1rem;
         margin-right: $general-horizontal-margin * 1rem;
     }
-    @media screen and (max-width: 960px) { //tablet
+    @media screen and (max-width: 960px) {
+        //tablet
         margin-left: $tablet960-horizontal-margin * 1rem;
         margin-right: $tablet960-horizontal-margin * 1rem;
     }
-    @media screen and (max-width: 767px) { //mobile
+    @media screen and (max-width: 767px) {
+        //mobile
         margin-top: 0;
         margin-left: 0;
         margin-right: 0;
     }
-    
 }
 
 .header__top-container {
@@ -105,10 +106,12 @@
             font-family: "Nunito Sans", sans-serif;
             font-weight: bold;
             text-overflow: ellipsis;
-            font-size: adaptive-font(1440, 960, 20, 18) // font-style: normal;
-                // font-weight: normal;
-                // line-height: normal;
-;
+            font-size: adaptive-font(1440, 960, 20, 18);
+            
+        }
+        a:hover {
+            text-decoration: underline;
+            scale: 1.1; //На СSS валидаторе ошибка, но это работает. Баг валидатора https://jigsaw.w3.org/css-validator/validator ???
         }
 
         @media screen and (min-width: 1440px) {

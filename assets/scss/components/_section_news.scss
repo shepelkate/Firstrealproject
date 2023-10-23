@@ -55,7 +55,7 @@
     gap: 0.5rem;
   }
 }
-.news__block_blue {
+.news__block-blue {
   display: flex;
   flex-direction: column;
   max-width: 28rem;
@@ -84,7 +84,7 @@
   //     max-width: 11rem;
   //   }
 }
-.news__block_red {
+.news__block-red {
   display: flex;
   flex-direction: column;
   align-self: flex-end;
@@ -118,7 +118,7 @@
   //     display: none;
   //   }
 }
-.news_header {
+.news__header {
   display: flex;
   flex-direction: row;
 }
@@ -127,7 +127,7 @@
   height: 1.45455rem;
   margin: 0 0.3vw 0 0;
 }
-.news__title_small {
+.news__title-small {
   font-family: "Arsenal_Bold", Arial, sans-serif;
   font-size: 1.27273rem;
   font-weight: 700;
@@ -140,7 +140,7 @@
     font-size: 1rem;
   }
 }
-.news__paragraph_small {
+.news__paragraph-small {
   align-self: center;
   text-align: justify;
   font-family: "Arsenal_Bold", Arial, sans-serif;
