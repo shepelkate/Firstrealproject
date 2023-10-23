@@ -7,14 +7,12 @@
         font-family: Nunito Sans;
         font-size: 16px;
         @media screen and (max-width: 960px) {
-            font-size: 10px;            
+            font-size: 10px;
         }
-
-        a{
+        a {
             text-decoration: none;
             color: rgba($color: #000000, $alpha: 0.5);
-            font-size: inherit;            
-
+            font-size: inherit;
         }
         a:hover {
             text-decoration: underline;
