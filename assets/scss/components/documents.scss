@@ -3,7 +3,12 @@
   align-items: center;
   flex-direction: column;
 
-  $doc-side-margin: adaptive-shrink(1440, 960, $general-horizontal-margin, $tablet960-horizontal-margin);
+  $doc-side-margin: adaptive-shrink(
+    1440,
+    960,
+    $general-horizontal-margin,
+    $tablet960-horizontal-margin
+  );
   margin-left: $doc-side-margin;
   margin-right: $doc-side-margin;
   @media screen and (min-width: 1440px) {
@@ -102,7 +107,7 @@
 }
 
 .documentation-img {
-  min-width: auto;
+  // min-width: auto;
   width: 100%;
   max-height: 13.64rem;
   border-radius: 1px;

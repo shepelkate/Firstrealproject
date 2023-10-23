@@ -1,0 +1,342 @@
+.footer {
+  background-color: $light-blue;
+  // margin: 60px 30px 25px;
+  padding-top: 1rem;
+  position: relative;
+  border-radius: 15px;
+  margin-top: 2.5rem;
+
+  $footer-side-margin: adaptive-shrink(
+    1440,
+    960,
+    $general-horizontal-margin,
+    $tablet960-horizontal-margin
+  );
+  margin-left: $footer-side-margin;
+  margin-right: $footer-side-margin;
+  @media screen and (min-width: 1440px) {
+    //desktop
+    margin-left: $general-horizontal-margin * 1rem;
+    margin-right: $general-horizontal-margin * 1rem;
+  }
+  @media screen and (max-width: 960px) {
+    //tablet
+    margin-left: $tablet960-horizontal-margin * 1rem;
+    margin-right: $tablet960-horizontal-margin * 1rem;
+  }
+  @media screen and (max-width: 767px) {
+    //mobile
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  li {
+    list-style: none;
+  }
+
+  ul {
+    padding-left: 0;
+  }
+
+  h3 {
+    font-family: "NunitoSans", Arial, sans-serif;
+    font-size: 1.09091rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+
+  .footer__map-link:hover,
+  .footer__contacts-link:hover {
+    text-decoration: underline;
+  }
+
+  .footer__bar {
+    display: block;
+    width: 25px;
+    height: 4px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: $header-footer-bar;
+  }
+  .footer__map-header {
+    margin-bottom: 0;
+  }
+
+  .footer__map-list {
+    margin: 0;
+  }
+  .footer__map-link,
+  .footer__contacts-link {
+    color: #000;
+    font-family: "NunitoSans", Arial, sans-serif;
+    font-size: 0.90909rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 200%;
+
+    /* 1.81818rem */
+  }
+
+  .footer__about-f {
+    width: 33%;
+    padding-left: 1.33rem;
+  }
+
+  .footer__contacts {
+    width: 33%;
+    padding-left: 1.36rem;
+    padding-right: 1.36rem;
+  }
+
+  .footer__contacts-header {
+    margin-bottom: 0.68rem;
+  }
+
+  .footer__contacts-list {
+    padding-left: 1.82rem;
+  }
+
+  .footer__about-logo {
+    width: 13.64rem;
+    height: 4.95rem;
+  }
+
+  .footer__about-text {
+    font-family: Arsenal_Bold;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 130%;
+  }
+
+  .footer__about-button {
+    display: inline-block;
+    margin-left: 1.82rem;
+    margin-bottom: 2.77rem;
+  }
+
+  .footer__container-f {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .footer__social {
+    position: absolute;
+    right: 0.91rem;
+    bottom: 1.82rem;
+  }
+
+  .footer__social-list {
+    display: flex;
+    flex-direction: row;
+    gap: 0.91rem;
+    padding: 0;
+  }
+
+  .footer__phone .footer__mail .footer__adress {
+    position: relative;
+  }
+
+  .footer__phone:before {
+    content: url(../icons/footer_tel_icon.svg);
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: -1.82rem;
+    position: absolute;
+  }
+
+  .footer__mail:before {
+    content: url(../icons/footer_email_icon.svg);
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: -1.82rem;
+    position: absolute;
+  }
+
+  .footer__address:before {
+    content: url(../icons/footer_maps_icon.svg);
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: -1.82rem;
+    position: absolute;
+  }
+
+  .footer__hamburger-container {
+    position: relative;
+    @media screen and (min-width: 768px) {
+      display: none;
+    }
+    margin-top: 1.1rem;
+    margin-right: 1.59rem;
+
+    .footer__hamburger {
+      display: block;
+      float: right;
+      position: relative;
+      z-index: 2;
+      padding: 10px;
+    }
+
+    .footer__bar {
+      display: block;
+      width: 30px;
+      height: 2px;
+      margin: 10px auto;
+      -webkit-transition: all 0.3s ease-in-out;
+      transition: all 0.3s ease-in-out;
+      background-color: $header-footer-bar;
+    }
+
+    .footer__hamburger.active .footer__bar:nth-child(1) {
+      transform: translateY(12px) rotate(45deg);
+    }
+
+    .footer__hamburger.active .footer__bar:nth-child(2) {
+      opacity: 0;
+    }
+
+    .footer__hamburger.active .footer__bar:nth-child(3) {
+      transform: translateY(-12px) rotate(-45deg);
+    }
+
+    .footer__mobile-menu {
+      display: none;
+    }
+
+    .footer__mobile-menu.active {
+      position: absolute;
+      top: 0;
+      right: 0;
+      z-index: 99;
+      background-color: $header-footer-background-mobile-menu;
+      box-shadow: $box-shadow;
+      border-radius: 0.68rem;
+
+      display: flex;
+      gap: 0.1rem;
+      flex-wrap: nowrap;
+      align-content: center;
+      justify-content: center;
+      flex-direction: column;
+      align-items: flex-start;
+
+      padding-left: 0.45rem;
+      margin-right: 0.5rem;
+      margin-top: 2.4rem;
+      min-width: 9.36rem;
+
+      .footer__map-link {
+        font-family: "NunitoSans", Arial, sans-serif;
+        font-size: 1.3rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        margin: 0;
+        // -webkit-transition: text-decoration 0.05s ease-in-out;
+      }
+      .footer__map-link:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  @media all and (max-width: 960px) {
+    .footer__about-logo {
+      width: 9.09091rem;
+      height: 3rem;
+    }
+  }
+
+  @media all and (max-width: 768px) {
+    .footer__footer {
+      margin: 0;
+      position: relative;
+    }
+
+    .footer__social {
+      position: absolute;
+      top: 0;
+      left: calc(50% - 2.55rem);
+    }
+
+    .footer__map {
+      display: none;
+    }
+
+    .footer__about-f {
+      width: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 1rem;
+    }
+
+    .footer__container-f {
+      display: block;
+    }
+
+    .footer__about-logo {
+      display: block;
+    }
+
+    .footer__about-text {
+      color: #000;
+      text-align: justify;
+      font-family: Arsenal_Bold;
+      font-size: 0.54545rem;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 140%;
+      /* 0.76364rem */
+      margin: 3.64rem 0rem 3.64rem 1.2rem;
+    }
+
+    .footer__contacts-link {
+      font-family: "NunitoSans", Arial, sans-serif;
+      font-size: 0.72727rem;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 140%;
+      /* 1.01818rem */
+    }
+
+    .footer__contacts {
+      width: 12rem;
+      padding-left: 1.82rem;
+      margin-left: 1.36rem;
+    }
+  }
+  @media all and (max-width: 360px) {
+    .footer__about-f {
+      flex-direction: column;
+      margin: 60px auto 0;
+      padding: 0;
+    }
+
+    .footer__about-text {
+      margin: 0.455rem;
+    }
+
+    .footer__about-button {
+      margin: auto;
+      margin-left: 0.455rem;
+    }
+
+    .footer__contacts {
+      width: auto;
+      margin: auto;
+    }
+
+    .footer__contacts-header {
+      margin: 0;
+    }
+
+    .footer__contacts-list {
+      padding: 0.223rem;
+      margin-top: 0;
+    }
+  }
+}

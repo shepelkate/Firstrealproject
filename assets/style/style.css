@@ -6,12 +6,9 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
-@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,400;6..12,700&display=swap");
 html {
-  line-height: 1.15;
-  /* 1 */
-  -webkit-text-size-adjust: 100%;
-  /* 2 */
+  line-height: 1.15; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
 }
 
 /* Sections
@@ -46,12 +43,9 @@ h1 {
  * 2. Show the overflow in Edge and IE.
  */
 hr {
-  box-sizing: content-box;
-  /* 1 */
-  height: 0;
-  /* 1 */
-  overflow: visible;
-  /* 2 */
+  box-sizing: content-box; /* 1 */
+  height: 0; /* 1 */
+  overflow: visible; /* 2 */
 }
 
 /**
@@ -59,10 +53,8 @@ hr {
  * 2. Correct the odd `em` font sizing in all browsers.
  */
 pre {
-  font-family: monospace, monospace;
-  /* 1 */
-  font-size: 1em;
-  /* 2 */
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
 }
 
 /* Text-level semantics
@@ -79,13 +71,9 @@ a {
  * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
  */
 abbr[title] {
-  border-bottom: none;
-  /* 1 */
-  text-decoration: underline;
-  /* 2 */
-  -webkit-text-decoration: underline dotted;
-          text-decoration: underline dotted;
-  /* 2 */
+  border-bottom: none; /* 1 */
+  text-decoration: underline; /* 2 */
+  text-decoration: underline dotted; /* 2 */
 }
 
 /**
@@ -103,10 +91,8 @@ strong {
 code,
 kbd,
 samp {
-  font-family: monospace, monospace;
-  /* 1 */
-  font-size: 1em;
-  /* 2 */
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
 }
 
 /**
@@ -156,14 +142,10 @@ input,
 optgroup,
 select,
 textarea {
-  font-family: inherit;
-  /* 1 */
-  font-size: 100%;
-  /* 1 */
-  line-height: 1.15;
-  /* 1 */
-  margin: 0;
-  /* 2 */
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
 }
 
 /**
@@ -231,18 +213,12 @@ fieldset {
  *    `fieldset` elements in all browsers.
  */
 legend {
-  box-sizing: border-box;
-  /* 1 */
-  color: inherit;
-  /* 2 */
-  display: table;
-  /* 1 */
-  max-width: 100%;
-  /* 1 */
-  padding: 0;
-  /* 3 */
-  white-space: normal;
-  /* 1 */
+  box-sizing: border-box; /* 1 */
+  color: inherit; /* 2 */
+  display: table; /* 1 */
+  max-width: 100%; /* 1 */
+  padding: 0; /* 3 */
+  white-space: normal; /* 1 */
 }
 
 /**
@@ -265,10 +241,8 @@ textarea {
  */
 [type=checkbox],
 [type=radio] {
-  box-sizing: border-box;
-  /* 1 */
-  padding: 0;
-  /* 2 */
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
 }
 
 /**
@@ -284,10 +258,8 @@ textarea {
  * 2. Correct the outline style in Safari.
  */
 [type=search] {
-  -webkit-appearance: textfield;
-  /* 1 */
-  outline-offset: -2px;
-  /* 2 */
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
 }
 
 /**
@@ -302,10 +274,8 @@ textarea {
  * 2. Change font properties to `inherit` in Safari.
  */
 ::-webkit-file-upload-button {
-  -webkit-appearance: button;
-  /* 1 */
-  font: inherit;
-  /* 2 */
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
 }
 
 /* Interactive
@@ -313,6 +283,10 @@ textarea {
 /*
  * Add the correct display in Edge, IE 10+, and Firefox.
  */
+details {
+  display: block;
+}
+
 /*
  * Add the correct display in all browsers.
  */
@@ -342,9 +316,9 @@ template {
   font-weight: 700;
 }
 @font-face {
-  font-family: "Arsenal_Regular";
-  src: url(../fonts/Arsenal_Regular.woff2) format("woff2"), url(../fonts/Arsenal_Regular.woff) format("woff");
-  font-weight: 700;
+  font-family: "NunitoSans";
+  src: url(../fonts/NunitoSans_10pt-Regular.woff2) format("woff2"), url(../fonts/NunitoSans_10pt-Regular.woff) format("woff");
+  font-weight: 400;
 }
 *,
 *::before,
@@ -415,7 +389,7 @@ a {
   box-sizing: border-box;
   color: white;
   background: #9c0d13;
-  font-family: "Nunito_Sans", Arial, sans-serif;
+  font-family: "NunitoSans", Arial, sans-serif;
   line-height: normal;
   letter-spacing: 4px;
   box-shadow: 4px 4px 4px 0px rgba(3, 116, 76, 0.25), 6px 6px 6px 0px rgba(3, 116, 76, 0.25) inset, -6px -6px 6px 0px rgba(0, 0, 0, 0.25) inset;
@@ -439,7 +413,7 @@ a {
 
 .button-red:hover {
   background: #f27377;
-  color: black;
+  color: #000;
 }
 
 .button-blue {
@@ -448,7 +422,7 @@ a {
   box-sizing: border-box;
   color: white;
   background: #0e3c87;
-  font-family: "Nunito_Sans", Arial, sans-serif;
+  font-family: "NunitoSans", Arial, sans-serif;
   line-height: normal;
   letter-spacing: 4px;
   box-shadow: 4px 4px 4px 0px rgba(3, 116, 76, 0.25), 6px 6px 6px 0px rgba(3, 116, 76, 0.25) inset, -6px -6px 6px 0px rgba(0, 0, 0, 0.25) inset;
@@ -471,7 +445,7 @@ a {
 
 .button-blue:hover {
   background: #739ef2;
-  color: black;
+  color: #000;
 }
 
 .header {
@@ -511,7 +485,7 @@ a {
   justify-content: space-between;
 }
 .header__top-container .header__logo {
-  background-image: url(./assets/icons/логотип.svg);
+  background-image: url(../icons/logo_header.svg);
   background-attachment: local;
   background-repeat: no-repeat;
   background-size: cover;
@@ -556,7 +530,7 @@ a {
 }
 .header__top-container .header__menu a {
   color: var(--unnamed, var(--unnamed, #000));
-  font-family: "Nunito Sans", sans-serif;
+  font-family: "NunitoSans", Arial, sans-serif;
   font-weight: bold;
   text-overflow: ellipsis;
   font-size: calc(18px + 2 * (100vw - 960px) / 480);
@@ -601,6 +575,7 @@ a {
   width: 30px;
   height: 2px;
   margin: 10px auto;
+  -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   background-color: #101010;
 }
@@ -637,7 +612,7 @@ a {
   min-width: 9.36rem;
 }
 .header__top-container .header__hamburger-container .header__mobile-menu.active .header__map-link {
-  font-family: "Nunito Sans", sans-serif;
+  font-family: "NunitoSans", Arial, sans-serif;
   font-size: 1.3rem;
   font-style: normal;
   font-weight: 400;
@@ -847,6 +822,7 @@ a {
   margin-top: 1.59rem;
   margin-bottom: 1.59rem;
   box-sizing: border-box;
+  gap: 1rem;
 }
 
 .projects__сard {
@@ -879,16 +855,31 @@ a {
   min-width: auto;
   width: 100%;
   max-height: 25rem;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: center;
-     object-position: center;
+  object-fit: cover;
+  object-position: center;
   overflow: hidden;
 }
 @media screen and (max-width: 960px) {
   .projects-img {
     max-height: 100%;
   }
+}
+
+.projects__text {
+  display: flex;
+  flex-direction: column;
+  padding: 1.9rem auto 2.5rem;
+}
+.projects__text .title-h3 {
+  margin: 1rem 0;
+}
+
+.projects__text_paragraph {
+  text-indent: 1.5rem;
+  text-align: justify;
+  line-height: 1.5rem;
+  opacity: 0.8;
+  margin: auto;
 }
 
 .news {
@@ -1222,10 +1213,8 @@ a {
 .news__img-1 {
   grid-area: 1/1/2/2;
   width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: center;
-     object-position: center;
+  object-fit: cover;
+  object-position: center;
   overflow: hidden;
   height: 100%;
 }
@@ -1233,10 +1222,8 @@ a {
 .news__img-2 {
   grid-area: 1/2/2/4;
   width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: center;
-     object-position: center;
+  object-fit: cover;
+  object-position: center;
   height: 100%;
   overflow: hidden;
 }
@@ -1244,10 +1231,8 @@ a {
 .news__img-3 {
   grid-area: 2/1/3/3;
   width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: center;
-     object-position: center;
+  object-fit: cover;
+  object-position: center;
   height: 100%;
   overflow: hidden;
 }
@@ -1256,10 +1241,8 @@ a {
   grid-area: 2/3/3/4;
   min-width: auto;
   width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: center;
-     object-position: center;
+  object-fit: cover;
+  object-position: center;
   height: 100%;
   overflow: hidden;
 }
@@ -1333,17 +1316,17 @@ a {
   align-items: center;
   grid-template-columns: 35% 65%;
   grid-template-rows: 1fr 1fr;
-  -moz-column-gap: 5%;
-       column-gap: 5%;
+  column-gap: 5%;
   row-gap: 5%;
   padding: 1rem;
   margin: auto;
 }
 .partners__container ul {
   margin-top: 0.41rem;
+  padding: 0;
 }
 .partners__container li {
-  list-style: inside url(/assets/icons/check_mark.svg);
+  list-style: inside url(../icons/check_mark.svg);
   color: rgba(0, 0, 0, 0.7);
   font-size: 1.27273rem;
   line-height: 130%;
@@ -1383,8 +1366,7 @@ a {
 }
 @media (max-width: 960px) {
   .partners__container {
-    -moz-column-gap: 1%;
-         column-gap: 1%;
+    column-gap: 1%;
     row-gap: 1%;
   }
 }
@@ -1814,15 +1796,12 @@ a {
 }
 
 .documentation-img {
-  min-width: auto;
   width: 100%;
   max-height: 13.64rem;
   border-radius: 1px;
   border: 1px solid lightgrey;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: center;
-     object-position: center;
+  object-fit: cover;
+  object-position: center;
 }
 
 .footer {
@@ -1859,7 +1838,7 @@ a {
   padding-left: 0;
 }
 .footer h3 {
-  font-family: "Nunito Sans";
+  font-family: "NunitoSans", Arial, sans-serif;
   font-size: 1.09091rem;
   font-style: normal;
   font-weight: 700;
@@ -1874,6 +1853,7 @@ a {
   width: 25px;
   height: 4px;
   margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   background-color: #101010;
 }
@@ -1885,8 +1865,8 @@ a {
 }
 .footer .footer__map-link,
 .footer .footer__contacts-link {
-  color: black;
-  font-family: "Nunito Sans";
+  color: #000;
+  font-family: "NunitoSans", Arial, sans-serif;
   font-size: 0.90909rem;
   font-style: normal;
   font-weight: 700;
@@ -1944,21 +1924,21 @@ a {
   position: relative;
 }
 .footer .footer__phone:before {
-  content: url("../icons/footer_tel_icon.svg");
+  content: url(../icons/footer_tel_icon.svg);
   display: inline-block;
   vertical-align: middle;
   margin-left: -1.82rem;
   position: absolute;
 }
 .footer .footer__mail:before {
-  content: url("../icons/footer_email_icon.svg");
+  content: url(../icons/footer_email_icon.svg);
   display: inline-block;
   vertical-align: middle;
   margin-left: -1.82rem;
   position: absolute;
 }
 .footer .footer__address:before {
-  content: url("../icons/footer_maps_icon.svg");
+  content: url(../icons/footer_maps_icon.svg);
   display: inline-block;
   vertical-align: middle;
   margin-left: -1.82rem;
@@ -1986,6 +1966,7 @@ a {
   width: 30px;
   height: 2px;
   margin: 10px auto;
+  -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   background-color: #101010;
 }
@@ -2022,7 +2003,7 @@ a {
   min-width: 9.36rem;
 }
 .footer .footer__hamburger-container .footer__mobile-menu.active .footer__map-link {
-  font-family: "Nunito Sans", sans-serif;
+  font-family: "NunitoSans", Arial, sans-serif;
   font-size: 1.3rem;
   font-style: normal;
   font-weight: 400;
@@ -2054,8 +2035,9 @@ a {
   .footer .footer__about-f {
     width: auto;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
+    padding-top: 1rem;
   }
   .footer .footer__container-f {
     display: block;
@@ -2075,7 +2057,7 @@ a {
     margin: 3.64rem 0rem 3.64rem 1.2rem;
   }
   .footer .footer__contacts-link {
-    font-family: "Nunito Sans";
+    font-family: "NunitoSans", Arial, sans-serif;
     font-size: 0.72727rem;
     font-style: normal;
     font-weight: 700;
@@ -2121,7 +2103,7 @@ a {
   color: rgba(0, 0, 0, 0.5);
 }
 .copyright .copyright__text {
-  font-family: Nunito Sans;
+  font-family: "NunitoSans", Arial, sans-serif;
   font-size: 16px;
   text-align: center;
 }
@@ -2137,4 +2119,6 @@ a {
 }
 .copyright .copyright__text a:hover {
   text-decoration: underline;
-}/*# sourceMappingURL=style.css.map */
+}
+
+/*# sourceMappingURL=style.css.map */

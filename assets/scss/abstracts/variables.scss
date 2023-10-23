@@ -1,20 +1,30 @@
-$red: #9c0d13;
-
-$blue: #0e3c87;
-
-$shadow:
-  4px 4px 4px 0px rgba(3, 116, 76, 0.25),
+$shadow: 4px 4px 4px 0px rgba(3, 116, 76, 0.25),
   6px 6px 6px 0px rgba(3, 116, 76, 0.25) inset,
   -6px -6px 6px 0px rgba(0, 0, 0, 0.25) inset;
 
 $box-shadow: 4px 4px 4px 0px rgba(3, 116, 76, 0.25);
 
+$red: #9c0d13;
+
+$blue: #0e3c87;
+
+$blood-red: #eb1720;
 
 $pink: #f27377;
 
 $light-blue: #739ef2;
 
-$blood-red: #eb1720;
+$header-footer-bar: #101010;
+
+$header-footer-background-mobile-menu: rgba(255, 255, 255, 0.9);
+
+$partners-color: rgba(0, 0, 0, 0.7);
+
+$news-background-blue: rgba(115, 158, 242, 0.7);
+
+$news-background-pink: rgba(242, 115, 119, 0.7);
+
+$news-paragraph: #000000b2;
 
 $rem: 22;
 
@@ -26,8 +36,6 @@ $inner-min-width: calc(15.45rem + $general-horizontal-margin * 1rem);
 
 //tablet
 $tablet960-horizontal-margin: 0.73;
-
-
 
 //functions
 @function adaptive-shrink($start-width, $stop-width, $max-size, $min-size) {
