@@ -5,9 +5,15 @@
   font-family: "Arsenal_Bold", Arial, sans-serif;
   font-size: 22px;
 }
-$rem: 22;
+
 html {
   font-size: calc($rem * 1px);
+}
+
+body {
+  max-width: $inner-width;
+  min-width: $inner-min-width;
+  margin: auto;
 }
 
 a {
@@ -50,7 +56,7 @@ a {
   text-align: center;
 }
 
-// Стили кнопок красной и синей
+// Стили красной и синей кнопок
 
 .button-red {
   padding: 1rem;
