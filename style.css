@@ -2122,10 +2122,17 @@ a {
 }
 .copyright .copyright__text {
   font-family: Nunito Sans;
+  font-size: 16px;
+}
+@media screen and (max-width: 960px) {
+  .copyright .copyright__text {
+    font-size: 10px;
+  }
 }
 .copyright .copyright__text a {
   text-decoration: none;
   color: rgba(0, 0, 0, 0.5);
+  font-size: inherit;
 }
 .copyright .copyright__text a:hover {
   text-decoration: underline;
