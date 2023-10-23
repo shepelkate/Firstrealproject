@@ -1,43 +1,29 @@
-$general-horizontal-margin: 1.36rem;
-$inner-width: calc(62.72727rem + $general-horizontal-margin);
-$inner-min-width: calc(15.45rem + $general-horizontal-margin);
-
 // -- some math magic goes on here --
-@function adaptive-shrink($start-width, $stop-width, $max-size, $min-size) {
-    $page-diff: $start-width - $stop-width;
-    $size-diff: $max-size - $min-size;
-
-    $stop-width-rem: calc($stop-width / $rem * 1rem);
-    $min-size-rem: $min-size * 1rem;
-
-    $factor: calc((100vw - $stop-width-rem) / ($page-diff));
-    $factor-rem: calc($factor * $rem);
-
-    @return calc($min-size-rem + $size-diff * $factor-rem); //rems
-}
-
-@function adaptive-font($start, $end, $max, $min) {
-    $factor: calc((100vw - $end * 1px) / ($start - $end));
-    @return calc($min * 1px + ($max - $min) * $factor);
-}
-
-body {
-    max-width: $inner-width;
-    min-width: $inner-min-width;
-    margin: auto;
-    min-width: 340px;
-}
 
 .header {
-    max-width: $inner-width;
-    background-color: $light-blue;
-    margin-top: 1.14rem;
-    margin-left: $general-horizontal-margin;
-    margin-right: $general-horizontal-margin;
     border-radius: 0.68rem;
     display: flex;
     flex-direction: column;
+
+    max-width: $inner-width;
+    background-color: $light-blue;
+    margin-top: 1.14rem;
+
+    $header-side-margin: adaptive-shrink(1440, 960, $general-horizontal-margin, $tablet960-horizontal-margin);
+    margin-left: $header-side-margin;
+    margin-right: $header-side-margin;
+    @media screen and (min-width: 1440px) {
+        //desktop
+        margin-left: $general-horizontal-margin * 1rem;
+        margin-right: $general-horizontal-margin * 1rem;
+    }
+    @media screen and (max-width: 960px) {
+        //tablet
+        margin-left: $tablet960-horizontal-margin * 1rem;
+        margin-right: $tablet960-horizontal-margin * 1rem;
+    }
     @media screen and (max-width: 767px) {
+        //mobile
         margin-top: 0;
         margin-left: 0;
         margin-right: 0;
@@ -79,8 +65,7 @@ body {
         //magic
         margin-left: adaptive-shrink(1440, 1280, $logo-left-margin-max, $logo-left-margin-min);
         margin-top: adaptive-shrink(1440, 1280, $logo-top-margin-max, $logo-top-margin-min);
-        
-        
+
         width: $logo-max-width * 1rem;
         height: $logo-max-height * 1rem;
 
@@ -121,10 +106,12 @@ body {
             font-family: "Nunito Sans", sans-serif;
             font-weight: bold;
             text-overflow: ellipsis;
-            font-size: adaptive-font(1440, 960, 20, 18) // font-style: normal;
-                // font-weight: normal;
-                // line-height: normal;
-;
+            font-size: adaptive-font(1440, 960, 20, 18);
+            
+        }
+        a:hover {
+            text-decoration: underline;
+            scale: 1.1; //На СSS валидаторе ошибка, но это работает. Баг валидатора https://jigsaw.w3.org/css-validator/validator ???
         }
 
         @media screen and (min-width: 1440px) {

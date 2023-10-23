@@ -1,18 +1,44 @@
 .news {
+  $news-side-margin: adaptive-shrink(1440, 960, $general-horizontal-margin, $tablet960-horizontal-margin);
+  margin-left: $news-side-margin;
+  margin-right: $news-side-margin;
+  @media screen and (min-width: 1440px) {
+    //desktop
+    margin-left: $general-horizontal-margin * 1rem;
+    margin-right: $general-horizontal-margin * 1rem;
+  }
+  @media screen and (max-width: 960px) {
+    //tablet
+    margin-left: $tablet960-horizontal-margin * 1rem;
+    margin-right: $tablet960-horizontal-margin * 1rem;
+  }
+  @media screen and (max-width: 767px) {
+    //mobile
+    margin-top: 0;
+    margin-left: 0.45rem;
+    margin-right: 0.45rem;
+  }
+}
+
+
+.news__section {
   display: grid;
   grid-template-columns: 58% 42%;
   box-sizing: border-box;
   border: solid $light-blue 1px;
   border-radius: 15px;
-  max-width: 62.54rem;
+
+  // max-width: 62.54rem;
   min-width: 13rem;
-  margin-left: auto;
-  margin-right: auto;
+
   @media screen and (max-width: 960px) {
+    //tablet
     display: flex;
     flex-direction: column-reverse;
-    max-width: 40.27273rem;
+    // max-width: 40.27273rem;
   }
+
+
 }
 .news__conteiner {
   display: flex;
@@ -29,7 +55,7 @@
     gap: 0.5rem;
   }
 }
-.news__block_blue {
+.news__block-blue {
   display: flex;
   flex-direction: column;
   max-width: 28rem;
@@ -58,7 +84,7 @@
   //     max-width: 11rem;
   //   }
 }
-.news__block_red {
+.news__block-red {
   display: flex;
   flex-direction: column;
   align-self: flex-end;
@@ -92,7 +118,7 @@
   //     display: none;
   //   }
 }
-.news_header {
+.news__header {
   display: flex;
   flex-direction: row;
 }
@@ -101,7 +127,7 @@
   height: 1.45455rem;
   margin: 0 0.3vw 0 0;
 }
-.news__title_small {
+.news__title-small {
   font-family: "Arsenal_Bold", Arial, sans-serif;
   font-size: 1.27273rem;
   font-weight: 700;
@@ -114,7 +140,7 @@
     font-size: 1rem;
   }
 }
-.news__paragraph_small {
+.news__paragraph-small {
   align-self: center;
   text-align: justify;
   font-family: "Arsenal_Bold", Arial, sans-serif;
