@@ -9,12 +9,7 @@
   background-color: $light-blue;
   margin-top: 1.14rem;
 
-  $header-side-margin: adaptive-shrink(
-    1440,
-    960,
-    $general-horizontal-margin,
-    $tablet960-horizontal-margin
-  );
+  $header-side-margin: adaptive-shrink(1440, 960, $general-horizontal-margin, $tablet960-horizontal-margin);
   margin-left: $header-side-margin;
   margin-right: $header-side-margin;
   @media screen and (min-width: 1440px) {
@@ -63,18 +58,8 @@
     $logo-min-height: 3;
 
     //magic
-    margin-left: adaptive-shrink(
-      1440,
-      1280,
-      $logo-left-margin-max,
-      $logo-left-margin-min
-    );
-    margin-top: adaptive-shrink(
-      1440,
-      1280,
-      $logo-top-margin-max,
-      $logo-top-margin-min
-    );
+    margin-left: adaptive-shrink(1440, 1280, $logo-left-margin-max, $logo-left-margin-min);
+    margin-top: adaptive-shrink(1440, 1280, $logo-top-margin-max, $logo-top-margin-min);
 
     width: $logo-max-width * 1rem;
     height: $logo-max-height * 1rem;
@@ -109,12 +94,7 @@
 
     $max-margin-right: 1.82;
     $min-margin-right: 0.94;
-    margin-right: adaptive-shrink(
-      1440,
-      960,
-      $max-margin-right,
-      $min-margin-right
-    );
+    margin-right: adaptive-shrink(1440, 960, $max-margin-right, $min-margin-right);
 
     a {
       color: var(--unnamed, var(--unnamed, #000));
@@ -136,7 +116,7 @@
       }
     }
 
-    @media screen and (max-width: 960px) {
+    @media screen and (max-width: 959px) {
       display: none;
     }
   }
@@ -163,6 +143,13 @@
       z-index: 2;
       padding: 10px;
       pointer-events: all;
+
+      margin-top: 1.5rem;
+      margin-right: $tablet960-horizontal-margin * 2rem;
+      @media screen and (max-width: 767px) {
+        margin-top: $tablet960-horizontal-margin * 1rem;
+        margin-right: $tablet960-horizontal-margin * 1rem;
+      }
     }
 
     .header__bar {
@@ -206,7 +193,7 @@
 
       padding-left: 0.45rem;
       margin-right: 0.5rem;
-      margin-top: 2.4rem;
+      margin-top: 3.4rem;
       min-width: 9.36rem;
 
       -webkit-transition: all 0.4s ease;
@@ -215,6 +202,7 @@
       transition: all 0.4s ease;
 
       .header__map-link {
+        color: black;
         font-family: "NunitoSans", Arial, sans-serif;
         font-size: 1.3rem;
         font-style: normal;
@@ -243,7 +231,7 @@
 
       padding-left: 0.45rem;
       margin-right: 0.5rem;
-      margin-top: 2.4rem;
+      margin-top: 3.4rem;
       min-width: 9.36rem;
 
       pointer-events: all;
@@ -281,12 +269,7 @@
 
   $margin-right-max: 3.77;
   $margin-right-min: 0.86;
-  margin-right: adaptive-shrink(
-    1440,
-    960,
-    $margin-right-max,
-    $margin-right-min
-  );
+  margin-right: adaptive-shrink(1440, 960, $margin-right-max, $margin-right-min);
 
   @media screen and (min-width: 1440px) {
     margin-left: $margin-left-max * 1rem;
