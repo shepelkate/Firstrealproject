@@ -31,17 +31,14 @@
   box-sizing: border-box;
   border: solid $light-blue 1px;
   border-radius: 15px;
-
-  // max-width: 62.54rem;
   min-width: 13rem;
-
   @media screen and (max-width: 960px) {
     //tablet
     display: flex;
     flex-direction: column-reverse;
-    // max-width: 40.27273rem;
   }
 }
+
 .news__conteiner {
   display: flex;
   flex-direction: column;
@@ -57,6 +54,7 @@
     gap: 0.5rem;
   }
 }
+
 .news__block-blue {
   display: flex;
   flex-direction: column;
@@ -76,16 +74,8 @@
     align-self: center;
     margin: 4vw 0 0 0;
   }
-  //   //   @media screen and (max-width: 620px) {
-  //   //     max-width: 18rem;
-  //   //   }
-  //   @media screen and (max-width: 488px) {
-  //     max-width: 16rem;
-  //   }
-  //   @media screen and (max-width: 442px) {
-  //     max-width: 11rem;
-  //   }
 }
+
 .news__block-red {
   display: flex;
   flex-direction: column;
@@ -107,28 +97,19 @@
     align-self: center;
     margin: 4vw 0 0 0;
   }
-  //   @media screen and (max-width: 620px) {
-  //     max-width: 18rem;
-  //   }
-  //   @media screen and (max-width: 488px) {
-  //     max-width: 16rem;
-  //   }
-  //   @media screen and (max-width: 442px) {
-  //     max-width: 11rem;
-  //   }
-  //   @media screen and (max-width: 320px) {
-  //     display: none;
-  //   }
 }
+
 .news__header {
   display: flex;
   flex-direction: row;
 }
+
 .news__icon {
   width: 1.45455rem;
   height: 1.45455rem;
   margin: 0 0.3vw 0 0;
 }
+
 .news__title-small {
   font-family: "Arsenal_Bold", Arial, sans-serif;
   font-size: 1.27273rem;
@@ -142,10 +123,11 @@
     font-size: 1rem;
   }
 }
+
 .news__paragraph-small {
   align-self: center;
   text-align: justify;
-  font-family: "Arsenal_Bold", Arial, sans-serif;
+  hyphens: auto;
   color: $news-paragraph;
   font-size: 1rem;
   font-weight: 700;
@@ -161,6 +143,7 @@
     font-size: 0.81818rem;
   }
 }
+
 .news__link {
   font-family: "Arsenal_Bold", Arial, sans-serif;
   color: $news-paragraph;
@@ -169,6 +152,7 @@
     font-size: 0.81818rem;
   }
 }
+
 .news__date {
   align-self: flex-end;
   font-family: "Arsenal_Bold", Arial, sans-serif;
@@ -181,6 +165,7 @@
     font-size: 0.72727rem;
   }
 }
+
 .news__button {
   align-self: center;
   font-family: "Arsenal_Bold", Arial, sans-serif;
@@ -200,30 +185,27 @@
     align-self: center;
   }
 }
+
 .news__button:hover {
   background: $pink;
   color: #000;
 }
+
 .news__title {
   text-align: start;
-  // font-size: 2.18182rem;
   line-height: 130%;
   @media screen and (max-width: 960px) {
     align-self: center;
-    // font-size: 1.81818rem;
     margin: 0.8rem 0;
   }
-  @media screen and (max-width: 480px) {
-    // font-size: 1.7rem;
-  }
   @media screen and (max-width: 430px) {
-    // font-size: 1rem;
     margin: 0;
   }
 }
+
 .news__paragraph {
   text-align: justify;
-  font-family: "Arsenal_Bold", Arial, sans-serif;
+  hyphens: auto;
   font-size: 1.27273rem;
   font-weight: 700;
   line-height: 130%;
@@ -248,10 +230,8 @@
     max-width: 17.54545rem;
     font-size: 1rem;
   }
-  // @media screen  and (max-width: 350px){
-  //     font-size: 1rem;
-  // }
 }
+
 .news__triangle {
   position: absolute;
   top: 2%;
@@ -266,14 +246,8 @@
   @media screen and (max-width: 640px) {
     display: none;
   }
-  //   @media screen and (max-width: 480px) {
-  //     width: 7.72727rem;
-  //     height: 7.72727rem;
-  //   }
-  //   @media screen and (max-width: 430px) {
-  //     display: none;
-  //   }
 }
+
 .news__img {
   display: flex;
   flex-direction: column;
@@ -281,18 +255,19 @@
     max-width: 28.63636rem;
   }
 }
+
 .news__block-img {
   display: grid;
   grid-template-columns: 1fr 1rem 1fr;
   grid-template-rows: 11.5rem 11.5rem;
   gap: 0.5rem;
-
   @media screen and (max-width: 480px) {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
   }
 }
+
 .news__img-1 {
   grid-area: 1/1/2/2;
   width: 100%;
@@ -301,6 +276,7 @@
   overflow: hidden;
   height: 100%;
 }
+
 .news__img-2 {
   grid-area: 1/2/2/4;
   width: 100%;
@@ -309,6 +285,7 @@
   height: 100%;
   overflow: hidden;
 }
+
 .news__img-3 {
   grid-area: 2/1/3/3;
   width: 100%;
@@ -317,6 +294,7 @@
   height: 100%;
   overflow: hidden;
 }
+
 .news__img-4 {
   grid-area: 2/3/3/4;
   min-width: auto;

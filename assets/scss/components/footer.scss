@@ -1,6 +1,5 @@
 .footer {
   background-color: $light-blue;
-  // margin: 60px 30px 25px;
   padding-top: 1rem;
   position: relative;
   border-radius: 15px;
@@ -166,26 +165,26 @@
   }
 
   .footer__hamburger-container {
-    position: absolute; 
-    top: 0; 
-    right: 0; 
-    width: 400px; 
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 400px;
     height: 400px;
 
     pointer-events: none;
-    overflow-x: hidden; 
+    overflow-x: hidden;
 
     @media screen and (min-width: 768px) {
       display: none;
     }
 
     .footer__hamburger {
-            display: block; 
-            float: right; 
-            position: relative; 
-            z-index: 2; 
-            padding: 10px; 
-            pointer-events: all; 
+      display: block;
+      float: right;
+      position: relative;
+      z-index: 2;
+      padding: 10px;
+      pointer-events: all;
     }
 
     .footer__bar {
@@ -211,7 +210,7 @@
     }
 
     .footer__mobile-menu {
-          position: absolute;
+      position: absolute;
       top: 0;
       right: -300px;
       z-index: 99;
@@ -232,20 +231,19 @@
       margin-top: 2.4rem;
       min-width: 9.36rem;
 
-    -webkit-transition: all 0.4s ease; 
-    -moz-transition: all 0.4s ease; 
-    -ms-transition: all 0.4s ease; 
-    transition: all 0.4s ease; 
+      -webkit-transition: all 0.4s ease;
+      -moz-transition: all 0.4s ease;
+      -ms-transition: all 0.4s ease;
+      transition: all 0.4s ease;
 
-     .footer__map-link {
-      font-family: "NunitoSans", Arial, sans-serif;
+      .footer__map-link {
+        font-family: "NunitoSans", Arial, sans-serif;
         font-size: 1.3rem;
         font-style: normal;
         font-weight: 400;
         line-height: normal;
         margin: 0;
-        // -webkit-transition: text-decoration 0.05s ease-in-out;
-      }
+              }
     }
 
     .footer__mobile-menu.active {
@@ -270,13 +268,12 @@
       margin-top: 2.4rem;
       min-width: 9.36rem;
 
-          pointer-events: all; 
-    -webkit-transition: all 0.4s ease; 
-    -moz-transition: all 0.4s ease; 
-    -ms-transition: all 0.4s ease; 
-    transition: all 0.4s ease; 
+      pointer-events: all;
+      -webkit-transition: all 0.4s ease;
+      -moz-transition: all 0.4s ease;
+      -ms-transition: all 0.4s ease;
+      transition: all 0.4s ease;
 
-     
       .footer__map-link:hover {
         text-decoration: underline;
       }

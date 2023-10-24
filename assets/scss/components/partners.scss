@@ -18,11 +18,6 @@
     max-width: 19.36rem;
     padding: 0.1rem;
     margin: auto;
-    // margin: 2rem 1rem;
-    // display: flex;
-    // flex-wrap: wrap;
-    // justify-content: center;
-    // align-items: center;
   }
 }
 
@@ -59,7 +54,6 @@
   min-width: 100%;
   min-height: 80%;
   display: grid;
-  // justify-items: center;
   align-items: center;
   grid-template-columns: 35% 65%;
   grid-template-rows: 1fr 1fr;
@@ -127,8 +121,6 @@
 .partners__aside {
   display: block;
   position: static;
-  // max-width: 20rem;
-  // max-height: 23rem;
   z-index: -1;
 
   max-width: 100%;

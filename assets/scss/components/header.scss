@@ -47,11 +47,6 @@
     background-repeat: no-repeat;
     background-size: cover;
     height: 300px;
-    // display: flex;
-    // justify-content: center;
-    // align-items: center;
-    // flex-shrink: 0;
-    // gap: 0.3rem;
 
     //vars for logo adaptive behaivor
     //-- left margin (rems) ------
@@ -130,7 +125,7 @@
     }
     a:hover {
       text-decoration: underline;
-      scale: 1.1; //На СSS валидаторе ошибка, но это работает. Баг валидатора https://jigsaw.w3.org/css-validator/validator ???
+      transform: scale(1.1);
     }
 
     @media screen and (min-width: 1440px) {
@@ -149,26 +144,25 @@
   //НЕ ЗАБУДЬ ИЗОЛИРОВАТЬ КЛАССЫ
   //БУРГЕР МЕНЮ НАЧИНАЕТСЯ ЗДЕСЬ
   .header__hamburger-container {
-      position: absolute; 
-    top: 0; 
-    right: 0; 
-    width: 400px; 
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 400px;
     height: 400px;
 
     pointer-events: none;
-    overflow-x: hidden; 
+    overflow-x: hidden;
     @media screen and (min-width: 960px) {
       display: none;
     }
 
-
     .header__hamburger {
-              display: block; 
-            float: right; 
-            position: relative; 
-            z-index: 2; 
-            padding: 10px; 
-            pointer-events: all; 
+      display: block;
+      float: right;
+      position: relative;
+      z-index: 2;
+      padding: 10px;
+      pointer-events: all;
     }
 
     .header__bar {
@@ -194,7 +188,7 @@
     }
 
     .header__mobile-menu {
-                position: absolute;
+      position: absolute;
       top: 0;
       right: -300px;
       z-index: 99;
@@ -215,21 +209,19 @@
       margin-top: 2.4rem;
       min-width: 9.36rem;
 
-    -webkit-transition: all 0.4s ease; 
-    -moz-transition: all 0.4s ease; 
-    -ms-transition: all 0.4s ease; 
-    transition: all 0.4s ease; 
+      -webkit-transition: all 0.4s ease;
+      -moz-transition: all 0.4s ease;
+      -ms-transition: all 0.4s ease;
+      transition: all 0.4s ease;
 
-     .header__map-link {
+      .header__map-link {
         font-family: "NunitoSans", Arial, sans-serif;
         font-size: 1.3rem;
         font-style: normal;
         font-weight: 400;
         line-height: normal;
         margin: 0;
-        // -webkit-transition: text-decoration 0.05s ease-in-out;
       }
-      
     }
 
     .header__mobile-menu.active {
@@ -254,13 +246,12 @@
       margin-top: 2.4rem;
       min-width: 9.36rem;
 
-          pointer-events: all; 
-    -webkit-transition: all 0.4s ease; 
-    -moz-transition: all 0.4s ease; 
-    -ms-transition: all 0.4s ease; 
-    transition: all 0.4s ease; 
+      pointer-events: all;
+      -webkit-transition: all 0.4s ease;
+      -moz-transition: all 0.4s ease;
+      -ms-transition: all 0.4s ease;
+      transition: all 0.4s ease;
 
-     
       .header__map-link:hover {
         text-decoration: underline;
       }
@@ -283,7 +274,6 @@
   $max-gap: 2.32;
   $min-gap: 0;
   gap: adaptive-shrink(1440, 960, $max-gap, $min-gap);
-  // margin: auto;
 
   $margin-left-max: 4.82;
   $margin-left-min: 0.45;
@@ -316,9 +306,6 @@
   .header__content-wrapper {
     display: flex;
     flex-direction: row;
-    // .header__content-margin-dirty-hack-2 {
-    //     min-width: 1.14rem;
-    // }
   }
 
   .header__about-us {
@@ -327,7 +314,6 @@
     align-items: flex-start;
     $about-us-gap: 1.13636rem;
     gap: $about-us-gap;
-    // margin-left: 5.68rem;
     max-width: 28.2rem;
     z-index: 2;
     @media screen and (max-width: 960px) {
@@ -350,18 +336,16 @@
       }
       h1 {
         color: var(--unnamed, var(--unnamed, #fff));
-        font-family: "Arsenal_Bold";
         font-size: adaptive-font(1440, 960, 48, 40);
         font-style: normal;
         font-weight: 700;
-        line-height: 130%; /* 2.83636rem */
+        line-height: 130%;
         letter-spacing: 0.04364rem;
         margin: 1.36rem 0 -0.69rem;
       }
 
       h2 {
         color: var(--unnamed, var(--unnamed, #fff));
-        font-family: "Arsenal_Bold";
         font-size: adaptive-font(1440, 960, 28, 20);
         font-style: normal;
         font-weight: 700;
@@ -373,9 +357,7 @@
       p {
         color: var(--unnamed, var(--unnamed, #fff));
         text-align: justify;
-        font-family: "Arsenal_Bold";
-        // font-style: normal;
-        // font-weight: 700;
+        hyphens: auto;
         font-size: adaptive-font(1440, 960, 22, 18);
         line-height: 130%; /* 1.3rem */
         letter-spacing: 0.02rem;
@@ -448,11 +430,7 @@
       $max-height: 27.04545;
       height: adaptive-shrink(768, 480, $max-height, $min-height);
     }
-
     margin-bottom: 1.18rem;
-
-    // border: solid;
-    // border-width: 1px;
 
     .header__positional {
       position: absolute;
