@@ -7,7 +7,12 @@
 
   $req-max-side-margin: 4.09;
   $req-min-side-margin: 2.27;
-  $req-side-margin: adaptive-shrink(1440, 960, $req-max-side-margin, $req-min-side-margin);
+  $req-side-margin: adaptive-shrink(
+    1440,
+    960,
+    $req-max-side-margin,
+    $req-min-side-margin
+  );
   margin-left: $req-side-margin;
   margin-right: $req-side-margin;
   @media screen and (min-width: 1440px) {
@@ -193,15 +198,8 @@
   @media screen and (max-width: 480px) {
     padding-left: 0;
     gap: 1rem;
-    // .button-blue {
-    //   font-size: 0.8rem;
-    // }
   }
   @media screen and (max-width: 375px) {
-    // .button-blue {
-    //   font-size: 0.5rem;
-    //   padding: 0.5rem;
-    // }
   }
 }
 

@@ -8,6 +8,7 @@
 
 html {
   font-size: calc($rem * 1px);
+  scroll-behavior: smooth;
 }
 
 body {

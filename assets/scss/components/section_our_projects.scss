@@ -34,8 +34,6 @@
   max-width: 60rem;
   margin-top: 1.59rem;
   margin-bottom: 1.59rem;
-
-  // padding: 1rem;
   box-sizing: border-box;
   gap: 1rem;
 }
@@ -43,7 +41,6 @@
 .projects__сard {
   display: flex;
   flex-direction: column;
-  // margin: 0.91rem auto;
   margin-top: 0.91rem;
   gap: 1rem;
   @media screen and (max-width: 960px) {
@@ -78,8 +75,6 @@
 .projects__text {
   display: flex;
   flex-direction: column;
-  //   justify-content: center;
-  // padding: 1.9rem 0 2.5rem;
   .title-h3 {
     margin: 1rem 0;
   }
@@ -88,6 +83,7 @@
 .projects__text-paragraph {
   text-indent: 1.5rem;
   text-align: justify;
+  hyphens: auto;
   line-height: 1.5rem;
   opacity: 0.8;
   margin: auto;

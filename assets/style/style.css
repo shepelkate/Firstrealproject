@@ -330,6 +330,7 @@ template {
 
 html {
   font-size: 22px;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -537,7 +538,7 @@ a {
 }
 .header__top-container .header__menu a:hover {
   text-decoration: underline;
-  scale: 1.1;
+  transform: scale(1.1);
 }
 @media screen and (min-width: 1440px) {
   .header__top-container .header__menu {
@@ -722,17 +723,15 @@ a {
 }
 .header__content .header__about-us .header__p-wrapper h1 {
   color: var(--unnamed, var(--unnamed, #fff));
-  font-family: "Arsenal_Bold";
   font-size: calc(40px + 8 * (100vw - 960px) / 480);
   font-style: normal;
   font-weight: 700;
-  line-height: 130%; /* 2.83636rem */
+  line-height: 130%;
   letter-spacing: 0.04364rem;
   margin: 1.36rem 0 -0.69rem;
 }
 .header__content .header__about-us .header__p-wrapper h2 {
   color: var(--unnamed, var(--unnamed, #fff));
-  font-family: "Arsenal_Bold";
   font-size: calc(20px + 8 * (100vw - 960px) / 480);
   font-style: normal;
   font-weight: 700;
@@ -743,7 +742,7 @@ a {
 .header__content .header__about-us .header__p-wrapper p {
   color: var(--unnamed, var(--unnamed, #fff));
   text-align: justify;
-  font-family: "Arsenal_Bold";
+  hyphens: auto;
   font-size: calc(18px + 4 * (100vw - 960px) / 480);
   line-height: 130%; /* 1.3rem */
   letter-spacing: 0.02rem;
@@ -907,6 +906,7 @@ a {
 .projects__text-paragraph {
   text-indent: 1.5rem;
   text-align: justify;
+  hyphens: auto;
   line-height: 1.5rem;
   opacity: 0.8;
   margin: auto;
@@ -1059,7 +1059,7 @@ a {
 .news__paragraph-small {
   align-self: center;
   text-align: justify;
-  font-family: "Arsenal_Bold", Arial, sans-serif;
+  hyphens: auto;
   color: rgba(0, 0, 0, 0.6980392157);
   font-size: 1rem;
   font-weight: 700;
@@ -1153,7 +1153,7 @@ a {
 
 .news__paragraph {
   text-align: justify;
-  font-family: "Arsenal_Bold", Arial, sans-serif;
+  hyphens: auto;
   font-size: 1.27273rem;
   font-weight: 700;
   line-height: 130%;
