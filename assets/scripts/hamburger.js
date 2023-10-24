@@ -1,9 +1,7 @@
 const footer_hamburger = document.querySelector(".footer__hamburger");
 const footer_menu = document.querySelector(".footer__mobile-menu");
 const footer_mobile_menu_link = document.querySelectorAll(".footer__mobile-menu a");
-console.log(footer_hamburger)
-console.log(footer_menu)
-console.log(footer_mobile_menu_link)
+
 
 
 footer_hamburger.addEventListener("click", mobileMenu);
