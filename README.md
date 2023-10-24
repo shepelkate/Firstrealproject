@@ -7,12 +7,7 @@
     
   [Основной контент организации](https://vk.com/anorastimvdobre)
 
-
-  [Использованный макет в Figma](https://www.figma.com/file/7xFd3At9abMve9v4fU8uQb/Landing-Page%2F-Растим-в-добре-FINAL?type=design&node-id=0-1&mode=design&t=TeJWZKNaPBQUw3uY-0)
-
-
   [Сайт на GitHub Pages](https://shepelkate.github.io/Firstrealproject/)
-    ·
   
 
 
