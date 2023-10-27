@@ -1835,6 +1835,11 @@ a {
   object-fit: cover;
   object-position: center;
 }
+@media screen and (max-width: 480px) {
+  .documentation-img {
+    max-width: 9.5rem;
+  }
+}
 
 .footer {
   background-color: #739ef2;
