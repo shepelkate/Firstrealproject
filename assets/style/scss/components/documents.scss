@@ -112,4 +112,7 @@
   border: 1px solid lightgrey;
   object-fit: cover;
   object-position: center;
+  @media screen and (max-width: 480px) {
+    max-width: 9.5rem;
+  }
 }
