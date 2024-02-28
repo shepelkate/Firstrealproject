@@ -1,0 +1,119 @@
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  font-family: "Arsenal_Bold", Arial, sans-serif;
+  font-size: 22px;
+}
+
+html {
+  font-size: calc($rem * 1px);
+  scroll-behavior: smooth;
+}
+
+body {
+  max-width: $inner-width;
+  min-width: $inner-min-width;
+  margin: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+// Стили для всех заголовков кроме header
+.title-h2 {
+  font-family: "Arsenal_Bold", Arial, sans-serif;
+  font-size: 2.18rem;
+  line-height: 2.84rem;
+  letter-spacing: 0.96px;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0;
+  @media screen and (max-width: 960px) {
+    font-size: 1.8rem;
+    line-height: 2.36rem;
+    letter-spacing: 0.8px;
+  }
+  @media screen and (max-width: 480px) {
+    font-size: 1.7rem;
+    line-height: 2.25rem;
+    letter-spacing: 0.76px;
+  }
+  @media screen and (max-width: 375px) {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    letter-spacing: 0.76px;
+  }
+}
+
+.title-h3 {
+  font-family: "Arsenal_Bold", Arial, sans-serif;
+  font-size: 1.1rem;
+  line-height: normal;
+  letter-spacing: 0.96px;
+  text-transform: uppercase;
+  margin: 0;
+  text-align: center;
+}
+
+// Стили красной и синей кнопок
+
+.button-red {
+  padding: 1rem;
+  border-radius: 0.45rem;
+  box-sizing: border-box;
+  color: white;
+  background: $red;
+  font-family: "NunitoSans", Arial, sans-serif;
+  line-height: normal;
+  letter-spacing: 4px;
+  box-shadow: $shadow;
+  transition: all 0.3s;
+  cursor: pointer;
+  text-transform: uppercase;
+  text-align: center;
+  white-space: nowrap;
+  @media screen and (max-width: 480px) {
+    font-size: 0.8rem;
+  }
+  @media screen and (max-width: 375px) {
+    font-size: 0.5rem;
+    padding: 0.5rem;
+  }
+}
+
+.button-red:hover {
+  background: $pink;
+  color: #000;
+}
+
+.button-blue {
+  padding: 1rem;
+  border-radius: 0.45rem;
+  box-sizing: border-box;
+  color: white;
+  background: $blue;
+  font-family: "NunitoSans", Arial, sans-serif;
+  line-height: normal;
+  letter-spacing: 4px;
+  box-shadow: $shadow;
+  transition: all 0.3s;
+  cursor: pointer;
+  text-transform: uppercase;
+  text-align: center;
+  white-space: nowrap;
+  @media screen and (max-width: 480px) {
+    font-size: 0.8rem;
+  }
+  @media screen and (max-width: 375px) {
+    padding: 0.5rem;
+  }
+}
+
+.button-blue:hover {
+  background: $light-blue;
+  color: #000;
+}
+
+//Конец стилей кнопок

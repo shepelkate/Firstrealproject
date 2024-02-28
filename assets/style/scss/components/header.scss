@@ -1,0 +1,436 @@
+// -- some math magic goes on here --
+
+.header {
+  border-radius: 0.68rem;
+  display: flex;
+  flex-direction: column;
+
+  max-width: $inner-width;
+  background-color: $light-blue;
+  margin-top: 1.14rem;
+
+  $header-side-margin: adaptive-shrink(1440, 960, $general-horizontal-margin, $tablet960-horizontal-margin);
+  margin-left: $header-side-margin;
+  margin-right: $header-side-margin;
+  @media screen and (min-width: 1440px) {
+    //desktop
+    margin-left: $general-horizontal-margin * 1rem;
+    margin-right: $general-horizontal-margin * 1rem;
+  }
+  @media screen and (max-width: 960px) {
+    //tablet
+    margin-left: $tablet960-horizontal-margin * 1rem;
+    margin-right: $tablet960-horizontal-margin * 1rem;
+  }
+  @media screen and (max-width: 767px) {
+    //mobile
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+.header__top-container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  .header__logo {
+    background-image: url(../icons/logo_header.svg);
+    background-attachment: local;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+
+    //vars for logo adaptive behaivor
+    //-- left margin (rems) ------
+    $logo-left-margin-min: 0.45;
+    $logo-left-margin-max: 3.41;
+    //-- left margin (rems) ------
+    $logo-top-margin-min: 1.14;
+    $logo-top-margin-max: 1.36;
+    //-- width (rems) ------------
+    $logo-max-width: 13.63636;
+    $logo-min-width: 9.09091;
+    //-- height (rems) -----------
+    $logo-max-height: 4.5;
+    $logo-min-height: 3;
+
+    //magic
+    margin-left: adaptive-shrink(1440, 1280, $logo-left-margin-max, $logo-left-margin-min);
+    margin-top: adaptive-shrink(1440, 1280, $logo-top-margin-max, $logo-top-margin-min);
+
+    width: $logo-max-width * 1rem;
+    height: $logo-max-height * 1rem;
+
+    @media screen and (min-width: 1440px) {
+      margin-left: $logo-left-margin-max * 1rem;
+      margin-top: $logo-top-margin-max * 1rem;
+    }
+    @media screen and (max-width: 1280px) {
+      margin-left: $logo-left-margin-min * 1rem;
+      margin-top: $logo-top-margin-min * 1rem;
+      width: adaptive-shrink(1280, 960, $logo-max-width, $logo-min-width);
+      height: adaptive-shrink(1280, 960, $logo-max-height, $logo-min-height);
+    }
+    @media screen and (max-width: 960px) {
+      width: $logo-min-width * 1rem;
+      height: $logo-min-height * 1rem;
+    }
+    @media screen and (max-width: 767px) {
+      margin-left: 1.59rem;
+      margin-top: 1.36rem;
+    }
+  }
+
+  .header__menu {
+    display: inline-flex;
+    align-items: center;
+    $max-gap: 1.14;
+    $min-gap: 0.57;
+    gap: adaptive-shrink(1440, 960, $max-gap, $min-gap);
+    margin-top: 1.59rem;
+
+    $max-margin-right: 1.82;
+    $min-margin-right: 0.94;
+    margin-right: adaptive-shrink(1440, 960, $max-margin-right, $min-margin-right);
+
+    a {
+      color: var(--unnamed, var(--unnamed, #000));
+      font-family: "NunitoSans", Arial, sans-serif;
+      font-weight: bold;
+      text-overflow: ellipsis;
+      font-size: adaptive-font(1440, 960, 20, 18);
+    }
+    a:hover {
+      text-decoration: underline;
+      transform: scale(1.1);
+    }
+
+    @media screen and (min-width: 1440px) {
+      gap: $max-gap * 1rem;
+      margin-right: $max-margin-right * 1rem;
+      a {
+        font-size: 20px;
+      }
+    }
+
+    @media screen and (max-width: 960px) {
+      display: none;
+    }
+  }
+
+  //НЕ ЗАБУДЬ ИЗОЛИРОВАТЬ КЛАССЫ
+  //БУРГЕР МЕНЮ НАЧИНАЕТСЯ ЗДЕСЬ
+  .header__hamburger-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 400px;
+    height: 400px;
+
+    pointer-events: none;
+    overflow-x: hidden;
+    @media screen and (min-width: 961px) {
+      display: none;
+    }
+
+    .header__hamburger {
+      display: block;
+      float: right;
+      position: relative;
+      z-index: 2;
+      padding: 10px;
+      pointer-events: all;
+
+      margin-top: 1.5rem;
+      margin-right: $tablet960-horizontal-margin * 2rem;
+      @media screen and (max-width: 767px) {
+        margin-top: $tablet960-horizontal-margin * 1rem;
+        margin-right: $tablet960-horizontal-margin * 1rem;
+      }
+    }
+
+    .header__bar {
+      display: block;
+      width: 30px;
+      height: 2px;
+      margin: 10px auto;
+      -webkit-transition: all 0.3s ease-in-out;
+      transition: all 0.3s ease-in-out;
+      background-color: $header-footer-bar;
+    }
+
+    .header__hamburger.active .header__bar:nth-child(1) {
+      transform: translateY(12px) rotate(45deg);
+    }
+
+    .header__hamburger.active .header__bar:nth-child(2) {
+      opacity: 0;
+    }
+
+    .header__hamburger.active .header__bar:nth-child(3) {
+      transform: translateY(-12px) rotate(-45deg);
+    }
+
+    .header__mobile-menu {
+      position: absolute;
+      top: 0;
+      right: -300px;
+      z-index: 99;
+      background-color: $header-footer-background-mobile-menu;
+      box-shadow: $box-shadow;
+      border-radius: 0.68rem;
+
+      display: flex;
+      gap: 0.1rem;
+      flex-wrap: nowrap;
+      align-content: center;
+      justify-content: center;
+      flex-direction: column;
+      align-items: flex-start;
+
+      padding-left: 0.45rem;
+      margin-right: 0.5rem;
+      margin-top: 3.4rem;
+      min-width: 9.36rem;
+
+      -webkit-transition: all 0.4s ease;
+      -moz-transition: all 0.4s ease;
+      -ms-transition: all 0.4s ease;
+      transition: all 0.4s ease;
+
+      .header__map-link {
+        color: black;
+        font-family: "NunitoSans", Arial, sans-serif;
+        font-size: 1.3rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        margin: 0;
+      }
+    }
+
+    .header__mobile-menu.active {
+      position: absolute;
+      top: 0;
+      right: 0;
+      z-index: 99;
+      background-color: $header-footer-background-mobile-menu;
+      box-shadow: $box-shadow;
+      border-radius: 0.68rem;
+
+      display: flex;
+      gap: 0.1rem;
+      flex-wrap: nowrap;
+      align-content: center;
+      justify-content: center;
+      flex-direction: column;
+      align-items: flex-start;
+
+      padding-left: 0.45rem;
+      margin-right: 0.5rem;
+      margin-top: 3.4rem;
+      min-width: 9.36rem;
+
+      pointer-events: all;
+      -webkit-transition: all 0.4s ease;
+      -moz-transition: all 0.4s ease;
+      -ms-transition: all 0.4s ease;
+      transition: all 0.4s ease;
+
+      .header__map-link:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  //БУРГЕР МЕНЮ КОНЧАЕТСЯ ТУТ
+}
+
+.header__content {
+  display: flex;
+  align-items: flex-start;
+  justify-items: center;
+  flex-direction: row;
+  @media screen and (max-width: 960px) {
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  $max-gap: 2.32;
+  $min-gap: 0;
+  gap: adaptive-shrink(1440, 960, $max-gap, $min-gap);
+
+  $margin-left-max: 4.82;
+  $margin-left-min: 0.45;
+  margin-left: adaptive-shrink(1440, 960, $margin-left-max, $margin-left-min);
+
+  $margin-right-max: 3.77;
+  $margin-right-min: 0.86;
+  margin-right: adaptive-shrink(1440, 960, $margin-right-max, $margin-right-min);
+
+  @media screen and (min-width: 1440px) {
+    margin-left: $margin-left-max * 1rem;
+    margin-right: $margin-right-max * 1rem;
+    gap: $max-gap * 1rem;
+  }
+  @media screen and (max-width: 960px) {
+    margin-left: $margin-left-min * 1rem;
+    margin-right: $margin-right-min * 1rem;
+    gap: $min-gap * 1rem;
+  }
+  @media screen and (max-width: 767px) {
+    margin-left: 1.36rem;
+    margin-right: 1.36rem;
+  }
+
+  .header__content-wrapper {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .header__about-us {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    $about-us-gap: 1.13636rem;
+    gap: $about-us-gap;
+    max-width: 28.2rem;
+    z-index: 2;
+    @media screen and (max-width: 960px) {
+      max-width: unset;
+    }
+
+    .header__p-wrapper {
+      $line-width: 0.13636rem;
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+      gap: 0.86rem - $line-width;
+      .header__red-line {
+        background-color: $red;
+        min-width: $line-width;
+        height: 89%;
+      }
+      .hide {
+        background-color: unset;
+      }
+      h1 {
+        color: var(--unnamed, var(--unnamed, #fff));
+        font-size: adaptive-font(1440, 960, 48, 40);
+        font-style: normal;
+        font-weight: 700;
+        line-height: 130%;
+        letter-spacing: 0.04364rem;
+        margin: 1.36rem 0 -0.69rem;
+      }
+
+      h2 {
+        color: var(--unnamed, var(--unnamed, #fff));
+        font-size: adaptive-font(1440, 960, 28, 20);
+        font-style: normal;
+        font-weight: 700;
+        line-height: 130%;
+        letter-spacing: 0.02rem;
+        margin: 0 0 0 0;
+      }
+
+      p {
+        color: var(--unnamed, var(--unnamed, #fff));
+        text-align: justify;
+        hyphens: auto;
+        font-size: adaptive-font(1440, 960, 22, 18);
+        line-height: 130%; /* 1.3rem */
+        letter-spacing: 0.02rem;
+        margin: 0 0 0 0;
+      }
+
+      @media screen and (min-width: 1440px) {
+        h1 {
+          font-size: 48px;
+        }
+
+        h2 {
+          font-size: 28px;
+        }
+
+        p {
+          font-size: 22px;
+        }
+      }
+
+      @media screen and (max-width: 960px) {
+        h1 {
+          font-size: 40px;
+        }
+
+        h2 {
+          font-size: 20px;
+        }
+
+        p {
+          font-size: 18px;
+        }
+      }
+    }
+
+    .header__button {
+      margin-top: 1.59rem - $about-us-gap;
+      margin-bottom: 1.45rem;
+      align-self: center;
+      justify-self: end;
+      z-index: 2;
+    }
+  }
+
+  .header__clipart {
+    position: relative;
+
+    $min-width: 19.36364;
+    $max-width: 22.72727;
+    width: adaptive-shrink(1440, 960, $max-width, $min-width);
+
+    $min-height: 27.04545;
+    $max-height: 31.31818;
+    height: adaptive-shrink(1440, 960, $max-height, $min-height);
+
+    @media screen and (min-width: 1440px) {
+      width: $max-width * 1rem;
+      height: $max-height * 1rem;
+    }
+    @media screen and (max-width: 960px) {
+      width: $min-width * 1rem;
+      height: $min-height * 1rem;
+    }
+    @media screen and (max-width: 768px) {
+      $min-width: 13.04545;
+      $max-width: 19.36364;
+      width: adaptive-shrink(768, 480, $max-width, $min-width);
+
+      $min-height: 18.18182;
+      $max-height: 27.04545;
+      height: adaptive-shrink(768, 480, $max-height, $min-height);
+    }
+    margin-bottom: 1.18rem;
+
+    .header__positional {
+      position: absolute;
+    }
+  }
+}
+
+.header__triangle-wrapper {
+  width: 0px;
+  height: 0px;
+  position: relative;
+  .header__triangle {
+    position: absolute;
+    width: 7.72727rem;
+    height: 7.72727rem;
+    left: 0%;
+    bottom: 0%;
+    z-index: 1;
+  }
+}
